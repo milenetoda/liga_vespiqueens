@@ -2,34 +2,47 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
     />
     <style>
-        body{
-            background: #3f3f3f;
-        }
+      body {
+        background: #3f3f3f;
+      }
+
+      #container {
+        margin: auto;
+      }
 
       #card {
+        background-image: url("duplas_otimizado.png");
+        width: 100%;
+        padding-top: 125%;
         position: relative;
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 100%;
       }
+
+      #card_content {
+        position: absolute;
+        top: 0;
+        padding-top: 40%;
+      }
+
       #card_image {
         width: 100%;
       }
 
       #card_text {
-        position: absolute;
-        top: 130px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
+        margin: 2%;
         background: white;
         opacity: 70%;
         font-family: "Alata", sans-serif;
         padding: 5px 10px;
-        font-size: 13px;
+        --font-size: 2rem;
+        font-size: 3.5vw;
         text-align: justify;
       }
 
@@ -40,35 +53,49 @@
 
       #card_text img {
         width: 10%;
-        margin-top: -15px;
       }
 
       #pokeball {
         text-align: center;
       }
+
+      @media (min-width: 700px) {
+        #card {
+          width: 700px;
+          margin: auto;
+        }
+
+        #card_text {
+          font-size: 24px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div id="card">
-      <img src="duplas_otimizado.png" alt="" id="card_image" />
-      <div id="card_text">
-        <p>
-          As duplas vão ser sorteadas (divididas em dois potes conforme ranking
-          da silph para manter o equilíbrio)
-        </p>
-        <p>
-          Pokémons não podem ser repetidos pela dupla, caso sua dupla escolha
-          para seu time você automaticamente não pode utilizá-lo
-        </p>
-        <p>
-          Todas vitórias importam, mesmo que perca de 2x1 você faz 1 ponto para
-          sua dupla
-        </p>
-        <p>
-          As 4 melhores duplas vão para a semifinal, 1°x 4° 2°x3º E depois final
-        </p>
-        <p>Obs. Os times serão registrados no site da Silph</p>
-        <div id="pokeball"><img src="pokeball.png" alt="" /></div>
+    <div id="container">
+      <div id="card">
+        <div id="card_content">
+          <div id="card_text">
+            <p>
+              As duplas vão ser sorteadas (divididas em dois potes conforme
+              ranking da silph para manter o equilíbrio)
+            </p>
+            <p>
+              Pokémons não podem ser repetidos pela dupla, caso sua dupla
+              escolha para seu time você automaticamente não pode utilizá-lo
+            </p>
+            <p>
+              Todas vitórias importam, mesmo que perca de 2x1 você faz 1 ponto
+              para sua dupla
+            </p>
+            <p>
+              As 4 melhores duplas vão para a semifinal, 1°x 4° 2°x3º E depois
+              final
+            </p>
+            <p>Obs. Os times serão registrados no site da Silph</p>
+            <div id="pokeball"><img src="pokeball.png" alt="" /></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
