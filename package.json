@@ -1,0 +1,11 @@
+{
+  "name": "_Duplas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/milenetoda/liga-pvp-cotia.git",
+  "author": "milenetoda <milene.toda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.14.0"
+  }
+}

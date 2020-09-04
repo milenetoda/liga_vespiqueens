@@ -10,6 +10,7 @@
     <style>
       body {
         background: #3f3f3f;
+        font-family: "Alata", sans-serif;
       }
 
       #container {
@@ -23,6 +24,7 @@
         position: relative;
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: 100%;
+        border-radius: 5px;
       }
 
       #card_content {
@@ -39,10 +41,12 @@
         margin: 2%;
         background: white;
         opacity: 70%;
-        font-family: "Alata", sans-serif;
+
         padding: 5px 10px;
         font-size: 3.5vw;
         text-align: justify;
+
+        border-radius: 5px;
       }
 
       #card_text p {
@@ -58,8 +62,82 @@
         text-align: center;
       }
 
+      #pos_card h2 {
+        --text-shadow: 1px 1px 4px #ddd, -1px -1px 4px #ddd, 1px -1px 4px #ddd,
+          -1px 1px 4px #ddd;
+        font-weight: 900;
+        color: #ccc;
+        text-align: center;
+      }
+
+      ol.lista {
+        list-style-position: inside;
+        padding-left: 0;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      .lista li {
+        background-color: #d1d1d1;
+        border-bottom: 1px dashed #888;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+      }
+      #rodadas {
+        display: none;
+      }
+
+      .partida {
+        display: flex;
+        --outline: dashed purple;
+        margin-bottom: 15px;
+      }
+
+      .partida h3 {
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+
+        background-color: #a1a1a1;
+        border-radius: 5px;
+
+        color: #222;
+        --outline: dashed red;
+        margin: 0;
+        position: absolute;
+        bottom: -26px;
+        left: 0;
+        right: 0;
+        width: 132px;
+        text-align: center;
+      }
+
+      .partida_numero {
+        --outline: dashed green;
+        width: 30px;
+        position: relative;
+      }
+
+      .partida .lista {
+        flex-grow: 1;
+        margin: 0;
+        list-style: none;
+      }
+
+      .partida .lista :nth-child(1),
+      .partida .lista :nth-child(2) {
+        color: hsl(0, 0%, 80%);
+        background-color: hsl(0, 0%, 10%);
+      }
+
+      .partida .lista :nth-child(3),
+      .partida .lista :nth-child(4) {
+        color: hsl(0, 0%, 10%);
+        background-color: hsl(0, 0%, 80%);
+      }
+
       @media (min-width: 700px) {
-        #card {
+        #container {
           width: 700px;
           margin: auto;
         }
@@ -87,13 +165,64 @@
               Todas vitórias importam, mesmo que perca de 2x1 você faz 1 ponto
               para sua dupla.
             </p>
-            <p>
-              As 4 melhores duplas vão para a semifinal:
-            </p>
+            <p>As 4 melhores duplas vão para a semifinal:</p>
             <p>1°x 4° | 2°x 3º e depois a final.</p>
             <p>Obs. Os times serão registrados no site da Silph.</p>
             <p>Mais dúvidas falem com os admins do torneio.</p>
             <div id="pokeball"><img src="pokeball.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+      <div id="pos_card">
+        <div id="participantes">
+          <h2>Participantes</h2>
+          <ol class="lista">
+            <li>Feer</li>
+            <li>Koba</li>
+            <li>Henrique</li>
+            <li>Danilo SJC</li>
+            <li>Milene</li>
+            <li>Geo</li>
+            <li>Diego</li>
+            <li>Filipe Coutinho</li>
+            <li>Chell</li>
+            <li>Raphael</li>
+            <li>Alex</li>
+            <li>Carlinhos</li>
+            <li>Ruth</li>
+            <li>Carlos chrispim</li>
+            <li>Teruaki</li>
+            <li>Danilo</li>
+            <li>Danillo</li>
+            <li>John</li>
+            <li>Lucas</li>
+            <li>Emerson</li>
+          </ol>
+        </div>
+        <div id="rodadas">
+          <h2>Rodada 1</h2>
+          <div class="partida">
+            <div class="partida_numero">
+              <h3>Partida #1</h3>
+            </div>
+
+            <ol class="lista">
+              <li>Feer</li>
+              <li>Koba</li>
+              <li>Henrique</li>
+              <li>Danilo SJC</li>
+            </ol>
+          </div>
+          <div class="partida">
+            <div class="partida_numero">
+              <h3>Partida #2</h3>
+            </div>
+            <ol class="lista">
+              <li>Du</li>
+              <li>Dudu</li>
+              <li>Edu</li>
+              <li>Dodi</li>
+            </ol>
           </div>
         </div>
       </div>

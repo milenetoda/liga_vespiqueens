@@ -1,0 +1,53 @@
+participantes:
+  - nome1: Feer
+    nome2: Koba
+    id: 1
+
+  - nome1: Henrique 
+    nome2: Danilo SJC
+    id: 2
+
+  - nome1: Milene
+    nome2: Geo
+    id: 3
+
+  - nome1: Diego
+    nome2: Filipe Coutinho
+    id: 4
+
+  - nome1: Chell
+    nome2: Raphael
+    id: 5
+  - nome1: Alex
+    nome2: Carlinhos
+    id: 6
+  - nome1: Ruth
+    nome2: Carlos chrispim
+    id: 7
+  - nome1: Teruaki
+    nome2: Danilo
+    id: 8
+  - nome1: Danillo
+    nome2: John
+    id: 9
+
+  - nome1: Lucas
+    nome2: Emerson
+    id: 10
+
+rodadas:
+  - rodada1: 
+    - [1, 2]
+    - [3, 4]
+    - [5, 6]
+    - [7, 8]
+    - [9, 10]
+  - rodada2:
+    - [1, 2]
+    - [3, 4]
+    - [5, 6]
+    - [7, 8]
+    - [9, 10]
+
+
+
