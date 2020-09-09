@@ -1,48 +1,52 @@
 participantes:
-  - nome1: Feer
-    nome2: Koba
-    id: 1
+  1:
+    nome1: Barros (Carlinhos)
+    nome2: MileneToda
 
-  - nome1: Henrique 
-    nome2: Danilo SJC
-    id: 2
+  2:
+    nome1: ArielRuther
+    nome2: AugustoChrispim
 
-  - nome1: Milene
-    nome2: Geo
-    id: 3
+  3:
+    nome1: FerRodrigues18 
+    nome2: Kobinha23
+  
+  4: 
+    nome1: Hgp2306 
+    nome2: Dannbarcellos 
 
-  - nome1: Diego
-    nome2: Filipe Coutinho
-    id: 4
+  5:
+    nome1: KobaTeruaki
+    nome2: GeoFCR7 
 
-  - nome1: Chell
-    nome2: Raphael
-    id: 5
-  - nome1: Alex
-    nome2: Carlinhos
-    id: 6
-  - nome1: Ruth
-    nome2: Carlos chrispim
-    id: 7
-  - nome1: Teruaki
-    nome2: Danilo
-    id: 8
-  - nome1: Danillo
-    nome2: John
-    id: 9
+  6:
+    nome1: DaniloCalvalhan
+    nome2: VegetaSSayajin 
 
-  - nome1: Lucas
-    nome2: Emerson
-    id: 10
+  7:
+    nome1: ChelRodrigues
+    nome2: Abmdragond (Alex)
+    
+  8:  
+    nome1: Danacrisc
+    nome2: Dikilua 
 
+  9:
+    nome1: Felipesp3456
+    nome2: MasterPh
+
+  10:
+    nome1: FeanorEss (Emerson)
+    nome2: LuucasOGrande
+   
 rodadas:
-  - rodada1: 
-    - [1, 2]
-    - [3, 4]
-    - [5, 6]
-    - [7, 8]
-    - [9, 10]
-  - rodada2:
+  -  
+    - [3, 1]
+    - [6, 10]
+    - [7, 5]
+    - [8, 4]
+    - [9, 2]
+  - 
     - [1, 2]
     - [3, 4]
     - [5, 6]

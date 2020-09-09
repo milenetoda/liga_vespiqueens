@@ -1,0 +1,164 @@
+body {
+    background: #3f3f3f;
+    font-family: "Alata", sans-serif;
+    overflow-y: scroll;
+  }
+
+  #container {
+    margin: auto;
+  }
+
+  #card {
+    background-image: url("duplas_otimizado.png");
+    width: 100%;
+    padding-top: 125%;
+    position: relative;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%;
+    border-radius: 5px;
+  }
+
+  #card_content {
+    position: absolute;
+    top: 0;
+    padding-top: 40%;
+  }
+
+  #card_image {
+    width: 100%;
+  }
+
+  #card_text {
+    margin: 2%;
+    background: white;
+    opacity: 70%;
+
+    padding: 5px 10px;
+    font-size: 3.5vw;
+    text-align: justify;
+
+    border-radius: 5px;
+  }
+
+  #card_text p {
+    margin: 0 0 10px 0;
+    line-height: 100%;
+  }
+
+  #card_text img {
+    width: 10%;
+  }
+
+  #pokeball {
+    text-align: center;
+  }
+
+  h2 {
+    --text-shadow: 1px 1px 4px #ddd, -1px -1px 4px #ddd, 1px -1px 4px #ddd,
+      -1px 1px 4px #ddd;
+    font-weight: 900;
+    color: #ccc;
+    text-align: center;
+  }
+
+  #menu  a{
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 900;
+  } 
+
+  #menu  a:hover {
+    color: rgb(157, 219, 100);
+  }
+
+  #menu {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+  }
+
+  #menu .selected
+  {
+    color: rgb(240, 184, 29);
+  }
+
+  .bloco_itens {
+    list-style-position: inside;
+    padding-left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .bloco_itens li {
+    background-color: #d1d1d1;
+    border-bottom: 1px dashed #888;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+  #rodadas {
+    --display: none;
+  }
+
+  .bloco {
+    display: flex;
+    --outline: dashed purple;
+    margin-bottom: 15px;
+  }
+
+  .bloco h3 {
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+
+    background-color: #a1a1a1;
+    border-radius: 5px;
+
+    color: #222;
+    --outline: dashed red;
+    margin: 0;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    width: 132px;
+    text-align: center;
+  }
+
+  .bloco_numero {
+    --outline: dashed green;
+    width: 30px;
+    position: relative;
+  }
+
+  .bloco_itens {
+    flex-grow: 1;
+    margin: 0;
+    list-style: none;
+  }
+
+  .bloco_itens :nth-child(1),
+  .bloco_itens :nth-child(2) {
+    color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 10%);
+  }
+
+  .bloco_itens :nth-child(3),
+  .bloco_itens :nth-child(4) {
+    color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 80%);
+  }
+
+  #participantes {
+    display: none;
+  }
+
+  @media (min-width: 700px) {
+    #container {
+      width: 700px;
+      margin: auto;
+    }
+
+    #card_text {
+      font-size: 24px;
+    }
+  }
