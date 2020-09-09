@@ -66,10 +66,10 @@ function rodadas(objeto) {
     </div>
 
     <ol class="bloco_itens">
-      <li>${dupla1.nome1}</li>
-      <li>${dupla1.nome2}</li>
-      <li>${dupla2.nome1}</li>
-      <li>${dupla2.nome2}</li>
+      <li>${dupla1.nome1} X ${dupla2.nome1}</li>
+      <li>${dupla1.nome1} X ${dupla2.nome2}</li>
+      <li>${dupla1.nome2} X ${dupla2.nome1}</li>
+      <li>${dupla1.nome2} X ${dupla2.nome2}</li>
     </ol>
   </div>
     `);
