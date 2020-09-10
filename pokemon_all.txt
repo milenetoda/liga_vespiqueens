@@ -1,0 +1,898 @@
+Abomasnow
+Abomasnow (Shadow)
+Abra
+Abra (Shadow)
+Absol
+Absol (Shadow)
+Accelgor
+Aerodactyl
+Aggron
+Aipom
+Alakazam
+Alakazam (Shadow)
+Alomomola
+Altaria
+Ambipom
+Amoonguss
+Ampharos
+Ampharos (Shadow)
+Anorith
+Arbok
+Arbok (Shadow)
+Arcanine
+Arcanine (Shadow)
+Arceus
+Arceus (Bug)
+Arceus (Dark)
+Arceus (Dragon)
+Arceus (Electric)
+Arceus (Fairy)
+Arceus (Fighting)
+Arceus (Fire)
+Arceus (Flying)
+Arceus (Ghost)
+Arceus (Grass)
+Arceus (Ground)
+Arceus (Ice)
+Arceus (Poison)
+Arceus (Psychic)
+Arceus (Rock)
+Arceus (Steel)
+Arceus (Water)
+Archen
+Archeops
+Ariados
+Armaldo
+Aron
+Articuno
+Articuno (Shadow)
+Audino
+Axew
+Azelf
+Azumarill
+Azurill
+Bagon
+Bagon (Shadow)
+Baltoy
+Banette
+Banette (Shadow)
+Barboach
+Basculin
+Bastiodon
+Bayleef
+Beartic
+Beautifly
+Beedrill
+Beedrill (Mega)
+Beedrill (Shadow)
+Beheeyem
+Beldum
+Beldum (Shadow)
+Bellossom
+Bellossom (Shadow)
+Bellsprout
+Bellsprout (Shadow)
+Bibarel
+Bidoof
+Bisharp
+Blastoise
+Blastoise (Mega)
+Blastoise (Shadow)
+Blaziken
+Blissey
+Blitzle
+Boldore
+Bonsly
+Bouffalant
+Braviary
+Breloom
+Bronzong
+Bronzor
+Budew
+Buizel
+Bulbasaur
+Bulbasaur (Shadow)
+Buneary
+Burmy (Plant)
+Burmy (Sandy)
+Burmy (Trash)
+Butterfree
+Cacnea
+Cacnea (Shadow)
+Cacturne
+Cacturne (Shadow)
+Camerupt
+Carnivine
+Carracosta
+Carvanha
+Carvanha (Shadow)
+Cascoon
+Castform
+Castform (Rainy)
+Castform (Snowy)
+Castform (Sunny)
+Caterpie
+Celebi
+Chandelure
+Chansey
+Charizard
+Charizard (Mega X)
+Charizard (Mega Y)
+Charizard (Shadow)
+Charmander
+Charmander (Shadow)
+Charmeleon
+Charmeleon (Shadow)
+Chatot
+Cherrim (Overcast)
+Cherrim (Sunny)
+Cherubi
+Chikorita
+Chimchar
+Chimecho
+Chinchou
+Chingling
+Cinccino
+Clamperl
+Claydol
+Clefable
+Clefairy
+Cleffa
+Cloyster
+Cobalion
+Cofagrigus
+Combee
+Combusken
+Conkeldurr
+Corphish
+Corsola
+Cottonee
+Cradily
+Cranidos
+Crawdaunt
+Cresselia
+Croagunk
+Crobat
+Crobat (Shadow)
+Croconaw
+Crustle
+Cryogonal
+Cubchoo
+Cubone
+Cubone (Shadow)
+Cyndaquil
+Darkrai
+Darmanitan (Galarian Zen)
+Darmanitan (Galarian)
+Darmanitan (Standard)
+Darmanitan (Zen)
+Darumaka
+Darumaka (Galarian)
+Deerling
+Deerling_autumn
+Deerling_spring
+Deerling_summer
+Deerling_winter
+Deino
+Delcatty
+Delibird
+Delibird (Shadow)
+Deoxys
+Deoxys (Attack)
+Deoxys (Defense)
+Deoxys (Speed)
+Dewgong
+Dewott
+Dialga
+Diglett
+Diglett (Alolan)
+Ditto
+Dodrio
+Doduo
+Donphan
+Dragonair
+Dragonair (Shadow)
+Dragonite
+Dragonite (Shadow)
+Drapion
+Dratini
+Dratini (Shadow)
+Drifblim
+Drifloon
+Drilbur
+Drowzee
+Drowzee (Shadow)
+Druddigon
+Ducklett
+Dugtrio
+Dugtrio (Alolan)
+Dunsparce
+Duosion
+Durant
+Dusclops
+Dusclops (Shadow)
+Dusknoir
+Dusknoir (Shadow)
+Duskull
+Duskull (Shadow)
+Dustox
+Dwebble
+Eelektrik
+Eelektross
+Eevee
+Ekans
+Ekans (Shadow)
+Electabuzz
+Electabuzz (Shadow)
+Electivire
+Electivire (Shadow)
+Electrike
+Electrode
+Elekid
+Elgyem
+Emboar
+Emolga
+Empoleon
+Entei
+Entei (Shadow)
+Escavalier
+Espeon
+Excadrill
+Exeggcute
+Exeggcute (Shadow)
+Exeggutor
+Exeggutor (Alolan)
+Exeggutor (Shadow)
+Exploud
+Farfetch'd
+Farfetchd (Galarian)
+Fearow
+Feebas
+Feraligatr
+Ferroseed
+Ferrothorn
+Finneon
+Flaaffy
+Flaaffy (Shadow)
+Flareon
+Floatzel
+Flygon
+Flygon (Shadow)
+Foongus
+Forretress
+Forretress (Shadow)
+Fraxure
+Frillish
+Froslass
+Furret
+Gabite
+Gallade
+Gallade (Shadow)
+Galvantula
+Garbodor
+Garchomp
+Gardevoir
+Gardevoir (Shadow)
+Gastly
+Gastrodon (East)
+Gastrodon (West)
+Genesect
+Genesect (Burn)
+Genesect (Chill)
+Genesect (Douse)
+Genesect (Shock)
+Gengar
+Geodude
+Geodude (Alolan)
+Gible
+Gigalith
+Girafarig
+Giratina (Altered)
+Giratina (Origin)
+Glaceon
+Glalie
+Glameow
+Gligar
+Gligar (Shadow)
+Gliscor
+Gliscor (Shadow)
+Gloom
+Gloom (Shadow)
+Golbat
+Golbat (Shadow)
+Goldeen
+Golduck
+Golduck (Shadow)
+Golem
+Golem (Alolan)
+Golett
+Golurk
+Gorebyss
+Gothita
+Gothitelle
+Gothorita
+Granbull
+Graveler
+Graveler (Alolan)
+Grimer
+Grimer (Alolan)
+Grimer (Shadow)
+Grotle
+Grotle (Shadow)
+Groudon
+Grovyle
+Growlithe
+Growlithe (Shadow)
+Grumpig
+Gulpin
+Gurdurr
+Gyarados
+Gyarados (Shadow)
+Happiny
+Hariyama
+Haunter
+Haxorus
+Heatmor
+Heatran
+Heracross
+Herdier
+Hippopotas
+Hippowdon
+Hitmonchan
+Hitmonchan (Shadow)
+Hitmonlee
+Hitmonlee (Shadow)
+Hitmontop
+Ho-Oh
+Honchkrow
+Hoothoot
+Hoppip
+Horsea
+Houndoom
+Houndoom (Shadow)
+Houndour
+Houndour (Shadow)
+Huntail
+Hydreigon
+Hypno
+Hypno (Shadow)
+Igglybuff
+Illumise
+Infernape
+Ivysaur
+Ivysaur (Shadow)
+Jellicent
+Jigglypuff
+Jirachi
+Jolteon
+Joltik
+Jumpluff
+Jynx
+Kabuto
+Kabutops
+Kadabra
+Kadabra (Shadow)
+Kakuna
+Kakuna (Shadow)
+Kangaskhan
+Karrablast
+Kecleon
+Keldeo (Ordinary)
+Keldeo (Resolute)
+Kingdra
+Kingler
+Kirlia
+Kirlia (Shadow)
+Klang
+Klink
+Klinklang
+Koffing
+Koffing (Shadow)
+Krabby
+Kricketot
+Kricketune
+Krokorok
+Krookodile
+Kyogre
+Kyurem
+Kyurem (Black)
+Kyurem (White)
+Lairon
+Lampent
+Landorus (Incarnate)
+Landorus (Therian)
+Lanturn
+Lapras
+Lapras (Shadow)
+Larvesta
+Larvitar
+Larvitar (Shadow)
+Latias
+Latios
+Leafeon
+Leavanny
+Ledian
+Ledyba
+Lickilicky
+Lickitung
+Liepard
+Lileep
+Lilligant
+Lillipup
+Linoone
+Linoone (Galarian)
+Litwick
+Lombre
+Lopunny
+Lotad
+Loudred
+Lucario
+Ludicolo
+Lugia
+Lumineon
+Lunatone
+Luvdisc
+Luxio
+Luxray
+Machamp
+Machamp (Shadow)
+Machoke
+Machoke (Shadow)
+Machop
+Machop (Shadow)
+Magby
+Magcargo
+Magikarp
+Magikarp (Shadow)
+Magmar
+Magmar (Shadow)
+Magmortar
+Magmortar (Shadow)
+Magnemite
+Magnemite (Shadow)
+Magneton
+Magneton (Shadow)
+Magnezone
+Magnezone (Shadow)
+Makuhita
+Mamoswine
+Manaphy
+Mandibuzz
+Manectric
+Mankey
+Mantine
+Mantyke
+Maractus
+Mareep
+Mareep (Shadow)
+Marill
+Marowak
+Marowak (Alolan)
+Marowak (Shadow)
+Marshtomp
+Marshtomp (Shadow)
+Masquerain
+Mawile
+Mawile (Shadow)
+Medicham
+Meditite
+Meganium
+Melmetal
+Meloetta (Aria)
+Meloetta (Pirouette)
+Meltan
+Meowth
+Meowth (Alolan)
+Meowth (Galarian)
+Meowth (Shadow)
+Mesprit
+Metagross
+Metagross (Shadow)
+Metang
+Metang (Shadow)
+Metapod
+Mew
+Mewtwo
+Mewtwo (Armored)
+Mewtwo (Shadow)
+Mienfoo
+Mienshao
+Mightyena
+Milotic
+Miltank
+Mime (Jr)
+Minccino
+Minun
+Misdreavus
+Misdreavus (Shadow)
+Mismagius
+Mismagius (Shadow)
+Moltres
+Moltres (Shadow)
+Monferno
+Mothim
+Mr. Mime
+Mudkip
+Mudkip (Shadow)
+Muk
+Muk (Alolan)
+Muk (Shadow)
+Munchlax
+Munna
+Murkrow
+Musharna
+Natu
+Nidoking
+Nidoking (Shadow)
+Nidoqueen
+Nidoqueen (Shadow)
+Nidoran♀
+Nidoran♀ (Shadow)
+Nidoran♂
+Nidoran♂ (Shadow)
+Nidorina
+Nidorina (Shadow)
+Nidorino
+Nidorino (Shadow)
+Nincada
+Ninetales
+Ninetales (Alolan)
+Ninetales (Shadow)
+Ninjask
+Noctowl
+Nosepass
+Numel
+Nuzleaf
+Nuzleaf (Shadow)
+Obstagoon
+Octillery
+Oddish
+Oddish (Shadow)
+Omanyte
+Omanyte (Shadow)
+Omastar
+Omastar (Shadow)
+Onix
+Oshawott
+Pachirisu
+Palkia
+Palpitoad
+Panpour
+Pansage
+Pansear
+Paras
+Parasect
+Patrat
+Pawniard
+Pelipper
+Perrserker
+Persian
+Persian (Alolan)
+Persian (Shadow)
+Petilil
+Phanpy
+Phione
+Pichu
+Pidgeot
+Pidgeotto
+Pidgey
+Pidove
+Pignite
+Pikachu
+Pikachu (Flying)
+Pikachu (Libre)
+Piloswine
+Pineco
+Pinsir
+Pinsir (Shadow)
+Piplup
+Plusle
+Politoed
+Politoed (Shadow)
+Poliwag
+Poliwag (Shadow)
+Poliwhirl
+Poliwhirl (Shadow)
+Poliwrath
+Poliwrath (Shadow)
+Ponyta
+Poochyena
+Porygon
+Porygon (Shadow)
+Porygon-Z
+Porygon-Z (Shadow)
+Porygon2
+Porygon2 (Shadow)
+Primeape
+Prinplup
+Probopass
+Psyduck
+Psyduck (Shadow)
+Pupitar
+Pupitar (Shadow)
+Purrloin
+Purugly
+Quagsire
+Quilava
+Qwilfish
+Raichu
+Raichu (Alolan)
+Raikou
+Raikou (Shadow)
+Ralts
+Ralts (Shadow)
+Rampardos
+Rapidash
+Raticate
+Raticate (Alolan)
+Raticate (Shadow)
+Rattata
+Rattata (Alolan)
+Rattata (Shadow)
+Rayquaza
+Regice
+Regigigas
+Regirock
+Registeel
+Relicanth
+Remoraid
+Reshiram
+Reuniclus
+Rhydon
+Rhyhorn
+Rhyperior
+Riolu
+Roggenrola
+Roselia
+Roserade
+Rotom
+Rotom (Fan)
+Rotom (Frost)
+Rotom (Heat)
+Rotom (Mow)
+Rotom (Wash)
+Rufflet
+Sableye
+Sableye (Shadow)
+Salamence
+Salamence (Shadow)
+Samurott
+Sandile
+Sandshrew
+Sandshrew (Alolan)
+Sandshrew (Shadow)
+Sandslash
+Sandslash (Alolan)
+Sandslash (Shadow)
+Sawk
+Sawsbuck
+Sawsbuck (Autumn)
+Sawsbuck (Spring)
+Sawsbuck (Summer)
+Sawsbuck (Winter)
+Sceptile
+Scizor
+Scizor (Shadow)
+Scolipede
+Scrafty
+Scraggy
+Scyther
+Scyther (Shadow)
+Seadra
+Seaking
+Sealeo
+Seedot
+Seedot (Shadow)
+Seel
+Seismitoad
+Sentret
+Serperior
+Servine
+Seviper
+Sewaddle
+Sharpedo
+Sharpedo (Shadow)
+Shaymin (Land)
+Shaymin (Sky)
+Shedinja
+Shelgon
+Shelgon (Shadow)
+Shellder
+Shellos (East)
+Shellos (West)
+Shelmet
+Shieldon
+Shiftry
+Shiftry (Shadow)
+Shinx
+Shroomish
+Shuckle
+Shuckle (Shadow)
+Shuppet
+Shuppet (Shadow)
+Sigilyph
+Silcoon
+Simipour
+Simisage
+Simisear
+Sirfetchd
+Skarmory
+Skiploom
+Skitty
+Skorupi
+Skuntank
+Skuntank (Shadow)
+Slaking
+Slakoth
+Slowbro
+Slowking
+Slowpoke
+Slugma
+Smeargle
+Smoochum
+Sneasel
+Sneasel (Shadow)
+Snivy
+Snorlax
+Snorlax (Shadow)
+Snorunt
+Snover
+Snover (Shadow)
+Snubbull
+Solosis
+Solrock
+Spearow
+Spheal
+Spinarak
+Spinda
+Spiritomb
+Spoink
+Squirtle
+Squirtle (Shadow)
+Stantler
+Stantler (Shadow)
+Staraptor
+Staravia
+Starly
+Starmie
+Staryu
+Steelix
+Stoutland
+Stunfisk
+Stunfisk (Galarian)
+Stunky
+Stunky (Shadow)
+Sudowoodo
+Suicune
+Suicune (Shadow)
+Sunflora
+Sunkern
+Surskit
+Swablu
+Swadloon
+Swalot
+Swampert
+Swampert (Shadow)
+Swanna
+Swellow
+Swinub
+Swoobat
+Taillow
+Tangela
+Tangrowth
+Tauros
+Teddiursa
+Tentacool
+Tentacruel
+Tepig
+Terrakion
+Throh
+Thundurus (Incarnate)
+Thundurus (Therian)
+Timburr
+Tirtouga
+Togekiss
+Togepi
+Togetic
+Torchic
+Torkoal
+Tornadus (Incarnate)
+Tornadus (Therian)
+Torterra
+Torterra (Shadow)
+Totodile
+Toxicroak
+Tranquill
+Trapinch
+Trapinch (Shadow)
+Treecko
+Tropius
+Trubbish
+Turtwig
+Turtwig (Shadow)
+Tympole
+Tynamo
+Typhlosion
+Tyranitar
+Tyranitar (Shadow)
+Tyrogue
+Umbreon
+Unfezant
+Unown
+Ursaring
+Uxie
+Vanillish
+Vanillite
+Vanilluxe
+Vaporeon
+Venipede
+Venomoth
+Venomoth (Shadow)
+Venonat
+Venonat (Shadow)
+Venusaur
+Venusaur (Mega)
+Venusaur (Shadow)
+Vespiquen
+Vibrava
+Vibrava (Shadow)
+Victini
+Victreebel
+Victreebel (Shadow)
+Vigoroth
+Vileplume
+Vileplume (Shadow)
+Virizion
+Volbeat
+Volcarona
+Voltorb
+Vullaby
+Vulpix
+Vulpix (Alolan)
+Vulpix (Shadow)
+Wailmer
+Wailord
+Walrein
+Wartortle
+Wartortle (Shadow)
+Watchog
+Weavile
+Weavile (Shadow)
+Weedle
+Weedle (Shadow)
+Weepinbell
+Weepinbell (Shadow)
+Weezing
+Weezing (Galarian)
+Weezing (Shadow)
+Whimsicott
+Whirlipede
+Whiscash
+Whismur
+Wigglytuff
+Wingull
+Wobbuffet
+Wobbuffet (Shadow)
+Woobat
+Wooper
+Wormadam (Plant)
+Wormadam (Sandy)
+Wormadam (Trash)
+Wurmple
+Wynaut
+Xatu
+Yamask
+Yanma
+Yanmega
+Zangoose
+Zapdos
+Zapdos (Shadow)
+Zebstrika
+Zekrom
+Zigzagoon
+Zigzagoon (Galarian)
+Zoroark
+Zorua
+Zubat
+Zubat (Shadow)
+Zweilous

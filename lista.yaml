@@ -1,6 +1,7 @@
 participantes:
   1:
-    nome1: Barros (Carlinhos)
+    nome1: Barros
+    comentario1: Carlinhos
     nome2: MileneToda
 
   2:
@@ -25,7 +26,8 @@ participantes:
 
   7:
     nome1: ChelRodrigues
-    nome2: Abmdragond (Alex)
+    nome2: Abmdragond
+    comentario2: Alex
     
   8:  
     nome1: Danacrisc
@@ -36,7 +38,8 @@ participantes:
     nome2: MasterPh
 
   10:
-    nome1: FeanorEss (Emerson)
+    nome1: FeanorEss
+    comentario1: Emerson
     nome2: LuucasOGrande
    
 rodadas:
