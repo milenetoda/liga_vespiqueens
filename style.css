@@ -4,6 +4,10 @@ body {
   overflow-y: scroll;
 }
 
+input {
+  font-family: inherit;
+}
+
 #container {
   margin: auto;
 }
@@ -220,6 +224,13 @@ h2 {
   display: static;
 }
 
+.resultados_partidas .resultado1-left , 
+.resultados_partidas .resultado1-right
+.resultados_partidas .resultado2{
+  display: inline-block;
+  
+}
+
 .resultados_partidas .resultado1-right {
   display: none;
 }
@@ -239,7 +250,10 @@ h2 {
   margin: 0 5px;
   box-sizing: border-box;
   text-align: center;
-  
+}
+
+.resultados_partidas input, .resultados_partidas .jogador1{
+  padding-bottom: 2px;
 }
 
 .resultados_partidas .jogador-nome {
@@ -265,5 +279,8 @@ h2 {
   }
   .resultados_partidas .jogador-vs {
     display: block;
+  }
+  .resultados_partidas input, .resultados_partidas .jogador1{
+    padding-bottom: 0;
   }
 }
