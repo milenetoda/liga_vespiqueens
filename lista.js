@@ -1,56 +1,57 @@
-const yaml = require("js-yaml");
 const fs = require("fs");
 
 var output = "";
 
-main();
+//main();
 
 function main() {
-  const objeto = yaml.safeLoad(fs.readFileSync("lista.yaml", "utf8"));
+  const dados = require("./dados.json");
   var paginas = ["rodadas", "duplas"];
-  var silph = require("./results.json");
+  var silph = require("./silph.json");
 
-  for (pag of paginas) {
+
+  for (var pagina of paginas) {
     output = "";
-    switch (pag) {
+    switch (pagina) {
       case "rodadas":
-        rodadas(objeto);
+        rodadas(dados);
         break;
       case "duplas":
-        duplas(objeto, silph);
+        duplas(dados, silph);
         break;
     }
-    var pagina = pag;
-    var input = fs.readFileSync(pag + "_template.html", "utf-8");
-    var final = input.replace("#" + pag + "#", output);
-    fs.writeFileSync(pag + ".html", final, "utf-8");
+    var input = fs.readFileSync(pagina + "_template.html", "utf-8");
+    var final = input.replace("#" + pagina + "#", output);
+    fs.writeFileSync(pagina + ".html", final, "utf-8");
   }
-  process.exit(0);
 }
 
-function duplas(objeto, silph) {
-  var lista_participantes = Object.entries(objeto.participantes);
-  for (var [id, participante] of lista_participantes) {
-    var dados1 = silph[participante.nome1.toLowerCase()];
-    var dados2 = silph[participante.nome2.toLowerCase()];
+function duplas(dados, silph) {
+  for (var dupla of dados.duplas) {
+    var participante1 = busca_participante(dados, dupla.participante1_id);
+    var participante2 = busca_participante(dados, dupla.participante2_id);
+    var time1 = silph[participante1.nome.toLowerCase()];
+    var time2 = silph[participante2.nome.toLowerCase()];
 
     write(`<div class="dupla bloco">`);
     write(`<div class="bloco_numero">`);
-    write(`<h3>Dupla #${id}</h3>`);
+    write(`<h3>Dupla #${dupla.nome}</h3>`);
     write(`</div>`);
     write(`<ol class="bloco_itens">`);
-    write(`<li>${participante.nome1}</li>`);
+    write(`<li>${participante1.nome}</li>`);
     write(`<li class="li_pokemon">`);
-    lista_pokemon(dados1.pokemon);
+    lista_pokemon(time1.pokemon);
     write(`</li>`);
-    write(`<li>${participante.nome2}</li>`);
+    write(`<li>${participante2.nome}</li>`);
     write(`<li class="li_pokemon">`);
-    lista_pokemon(dados2.pokemon);
+    lista_pokemon(time2.pokemon);
     write(`</li>`);
     write(`</ol>`);
     write(`</div>`);
   }
 }
+
+
 
 function lista_pokemon(pokemon) {
   write(`<div class="pokemon_list">`);
@@ -80,19 +81,14 @@ function fixname(name) {
   return name;
 }
 
-function rodadas(objeto) {
+function rodadas(dados) {
   var j = 0;
-  for (var rodada of objeto.rodadas) {
+  for (var rodada of dados.rodadas) {
     var i = 0;
     j++;
     write(`<h2>Rodada ${j}</h2>`);
-    for (var partida of rodada) {
+    for (var partida of rodada.partidas) {
       i++;
-      var dupla1_id = partida[0];
-      var dupla2_id = partida[1];
-
-      var dupla1 = objeto.participantes[dupla1_id];
-      var dupla2 = objeto.participantes[dupla2_id];
 
       write(`
     <div class="partida bloco">
@@ -100,11 +96,12 @@ function rodadas(objeto) {
       <h3>Partida #${i}</h3>
     </div>
 
-    <ol class="bloco_itens">
-      <li>${dupla1.nome1} X ${dupla2.nome1}</li>
-      <li>${dupla1.nome1} X ${dupla2.nome2}</li>
-      <li>${dupla1.nome2} X ${dupla2.nome1}</li>
-      <li>${dupla1.nome2} X ${dupla2.nome2}</li>
+    <ol class="bloco_itens resultados_partidas">
+    `)
+    for (const jogo of partida.jogos) {
+      criaJogo(dados, jogo);
+    }  
+    write(`
     </ol>
   </div>
     `);
@@ -112,7 +109,52 @@ function rodadas(objeto) {
   }
 }
 
+function criaJogo(dados, jogo) {
+  var nome1 = busca_participante(dados, jogo.jogador1_id).nome;
+  var nome2 = busca_participante(dados, jogo.jogador2_id).nome;
+
+  write(`
+  <li>
+    <div class="jogador1">
+      <input class="resultado1-left" value="${jogo.pontos1}" readonly/>
+      <span class="jogador-nome">${nome1}</span>
+      <input class="resultado1-right" value="${jogo.pontos1}" readonly/>
+    </div>
+    <div class="jogador-vs">X</div>
+    <div class="jogador2">
+      <input class="resultado2" value="${jogo.pontos2}" readonly/>
+      <span class="jogador-nome">${nome2}</span>
+    </div>
+  </li>
+  `)
+}
+
+function busca_participante (dados, id){
+  return find_by_id(
+    dados.participantes,
+    "participante_id",
+    id)
+}
+
+function busca_dupla(dados, id) {
+  return find_by_id(
+    dados.duplas,
+    "dupla_id",
+    id)
+}
+
+function find_by_id(array, nome_id, valor_id) {
+  for (const item of array) {
+    if (item[nome_id] === valor_id) return item;
+  }
+  return null;
+}
+
 function write(a) {
   //console.log(a);
   output += a + "\r\n";
+}
+
+module.exports = {
+  executar: main
 }

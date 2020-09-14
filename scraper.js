@@ -29,6 +29,6 @@ x(
     }
     //console.log(rv);
     
-    fs.writeFileSync("results.json", JSON.stringify(rv, null, 2), "utf-8");
+    fs.writeFileSync("silph.json", JSON.stringify(rv, null, 2), "utf-8");
   })
 //.write("results.json");

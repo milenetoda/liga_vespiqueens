@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      #app {
+        width: 768px;
+        margin: 0 auto;
+      }
+      #header h1 {
+        margin: 0;
+      }
+      #header {
+        position: fixed;
+        top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        background: white;
+      }
+
+      #participantes {
+        margin-top: 100px;
+      }
+
+      .partida {
+        margin-bottom: 20px;
+      }
+
+      .borda-dashed {
+        border: 1px dashed black;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+
+      select {
+        min-width: 147px;
+      }
+
+      .jogo input {
+        width: 30px;
+        text-align: center;
+      }
+
+      .jogador {
+        width: 200px;
+        display: inline-block;
+      }
+
+      .jogador:first-child {
+        text-align: right;
+      }
+
+      .rodada h2 {
+        display: inline-block;
+      }
+
+      [v-cloak] > * {
+        display: none;
+      }
+      [v-cloak]::before {
+        content: "loading…";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <div id="header">
+        <h1>Admin</h1>
+        <button @click="salvar">Salvar</button>
+        <span v-if="resultado == 'ok'">Dados salvos com sucesso.</span>
+        <span v-if="resultado == 'erro'">Erro ao salvar os dados.</span>
+      </div>
+
+      <div id="participantes">
+        <h2>Participantes</h2>
+        <div class="borda-dashed">
+          <input
+            type="text"
+            v-model="participante.nome"
+            placeholder="Digite o nome"
+          />
+          <input
+            type="text"
+            v-model="participante.comentario"
+            placeholder="Digite um comentário"
+          />
+          <button @click="adiciona_participante">add</button>
+        </div>
+
+        <div v-for="participante in participantes">
+          <input v-model="participante.nome" />
+          <input v-model="participante.comentario" />
+          <button @click="remove_participante(participante)">X</button>
+        </div>
+      </div>
+
+      <div id="duplas">
+        <h2>Duplas</h2>
+
+        <div id="duplas-adicionar" class="borda-dashed">
+          <select v-model="dupla.participante1_id">
+            <option
+              v-for="participante in participantes"
+              :value="participante.participante_id"
+            >
+              {{participante.nome}}
+            </option>
+          </select>
+          <select v-model="dupla.participante2_id">
+            <option
+              v-for="participante in participantes"
+              :value="participante.participante_id"
+            >
+              {{participante.nome}}
+            </option>
+          </select>
+          <input type="text" v-model="dupla.nome" placeholder="Digite um nº" />
+          <button @click="adiciona_dupla">add</button>
+        </div>
+
+        <div id="duplas-listar">
+          <div v-for="dupla in duplas">
+            <select v-model="dupla.participante1_id">
+              <option
+                v-for="participante in participantes"
+                :value="participante.participante_id"
+              >
+                {{participante.nome}}
+              </option>
+            </select>
+            <select v-model="dupla.participante2_id">
+              <option
+                v-for="participante in participantes"
+                :value="participante.participante_id"
+              >
+                {{participante.nome}}
+              </option>
+            </select>
+
+            <input type="text" v-model="dupla.nome" />
+            <button @click="remove_dupla(dupla)">X</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>Rodadas</h2>
+      <div class="borda-dashed">
+        <div>Adicionar rodada</div>
+        <button @click="adiciona_rodada">Adiciona Rodada</button>
+      </div>
+
+      <div v-for="(rodada, i) in rodadas" class="rodada">
+        <h2>Rodada {{i+1}}</h2>
+        <button @click="remove_rodada(rodada)">X</button>
+        <div class="borda-dashed">
+          <select v-model="partida.dupla1_id">
+            <option v-for="dupla in duplas" :value="dupla.dupla_id">
+              Dupla #{{dupla.nome}}
+            </option>
+          </select>
+          <select v-model="partida.dupla2_id">
+            <option v-for="dupla in duplas" :value="dupla.dupla_id">
+              Dupla #{{dupla.nome}}
+            </option>
+          </select>
+          <button @click="adiciona_partida(rodada)">Adiciona partida</button>
+        </div>
+
+        <div class="rodada-lista">
+          <div v-for="(partida, j) in rodada.partidas" class="partida">
+            <h2>Rodada {{i+1}} - Partida {{j+1}}</h2>
+            <button @click="remove_partida(partida, rodada)">X</button>
+            <div v-for="jogo in partida.jogos" class="jogo">
+              <span class="jogador"
+                >{{find_jogador(jogo.jogador1_id).nome}}</span
+              >
+              <input type="text" v-model="jogo.pontos1" />
+              <span class="jogo-x">X</span>
+              <input type="text" v-model="jogo.pontos2" />
+              <span class="jogador"
+                >{{find_jogador(jogo.jogador2_id).nome}}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/uid@1.0.0/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/faker@5.1.0/dist/faker.min.js"></script>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            resultado: "",
+            participante: {
+              nome: "",
+              participante_id: "",
+              comentario: "",
+            },
+            participantes: [],
+            dupla: {
+              participante1_id: "",
+              participante2_id: "",
+              nome: "",
+              dupla_id: "",
+            },
+            duplas: [],
+            rodadas: [],
+            partida: {
+              dupla1_id: "",
+              dupla2_id: "",
+              partida_id: "",
+            },
+          };
+        },
+
+        async mounted() {
+          var response = await fetch("/load");
+          var dados = await response.json();
+          console.log(dados);
+          this.set_array(dados.participantes, this.participantes);
+          this.set_array(dados.duplas, this.duplas);
+          this.set_array(dados.rodadas, this.rodadas);
+        },
+        methods: {
+
+          async salvar() {
+            try {
+              
+            
+            var dados = {
+              participantes: this.participantes,
+              duplas: this.duplas,
+              rodadas: this.rodadas,
+            };
+            var response = await fetch("/save", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(dados),
+            });
+            if (response.ok) {
+              this.resultado = "ok";
+            } else this.resultado = "erro";
+            window.setTimeout(() => {
+              this.resultado = "";
+            }, 5000);
+          } catch (error) {
+              this.resultado = "erro";
+              console.error(error);
+
+            }
+          },
+          set_array(array1, array2) {
+            for (const item of array1) {
+              array2.push(item);
+            }
+          },
+          adiciona_participante() {
+            this.participantes.push({
+              nome: this.participante.nome,
+              participante_id: uid(),
+              comentario: this.participante.comentario,
+            });
+          },
+          remove_participante(participante) {
+            this.participantes.splice(
+              this.participantes.indexOf(participante),
+              1
+            );
+          },
+          adiciona_dupla() {
+            this.duplas.push({
+              participante1_id: this.dupla.participante1_id,
+              participante2_id: this.dupla.participante2_id,
+              nome: this.dupla.nome,
+              dupla_id: uid(),
+            });
+          },
+          remove_dupla(dupla) {
+            this.duplas.splice(this.duplas.indexOf(dupla), 1);
+          },
+          adiciona_rodada() {
+            this.rodadas.push({
+              partidas: [],
+            });
+          },
+          remove_rodada(rodada) {
+            this.rodadas.splice(this.rodadas.indexOf(rodada), 1);
+          },
+          adiciona_partida(rodada) {
+            var dupla1 = this.find_by_id(
+              this.duplas,
+              "dupla_id",
+              this.partida.dupla1_id
+            );
+            var dupla2 = this.find_by_id(
+              this.duplas,
+              "dupla_id",
+              this.partida.dupla2_id
+            );
+            var participante1 = this.find_by_id(
+              this.participantes,
+              "participante_id",
+              dupla1.participante1_id
+            );
+            var participante2 = this.find_by_id(
+              this.participantes,
+              "participante_id",
+              dupla1.participante2_id
+            );
+            var participante3 = this.find_by_id(
+              this.participantes,
+              "participante_id",
+              dupla2.participante1_id
+            );
+            var participante4 = this.find_by_id(
+              this.participantes,
+              "participante_id",
+              dupla2.participante2_id
+            );
+            rodada.partidas.push({
+              dupla1_id: this.partida.dupla1_id,
+              dupla2_id: this.partida.dupla2_id,
+              partida_id: this.partida.partida_id,
+              jogos: [
+                {
+                  jogador1_id: participante1.participante_id,
+                  jogador2_id: participante3.participante_id,
+                  pontos1: 0,
+                  pontos2: 0,
+                },
+                {
+                  jogador1_id: participante1.participante_id,
+                  jogador2_id: participante4.participante_id,
+                  pontos1: 0,
+                  pontos2: 0,
+                },
+                {
+                  jogador1_id: participante2.participante_id,
+                  jogador2_id: participante3.participante_id,
+                  pontos1: 0,
+                  pontos2: 0,
+                },
+                {
+                  jogador1_id: participante2.participante_id,
+                  jogador2_id: participante4.participante_id,
+                  pontos1: 0,
+                  pontos2: 0,
+                },
+              ],
+            });
+          },
+
+          remove_partida(partida, rodada) {
+            rodada.partidas.splice(rodada.partidas.indexOf(partida), 1);
+          },
+          find_by_id(array, nome_id, valor_id) {
+            for (const item of array) {
+              if (item[nome_id] === valor_id) return item;
+            }
+            return null;
+          },
+          find_jogador(jogador_id) {
+            return this.find_by_id(
+              this.participantes,
+              "participante_id",
+              jogador_id
+            );
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,12 +1,18 @@
 {
-  "name": "_Duplas",
+  "name": "Duplas",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/milenetoda/liga-pvp-cotia.git",
   "author": "milenetoda <milene.toda@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./node_modules/local-web-server/bin/cli.js --stack body-parser static server"
+  },
   "dependencies": {
-    "js-yaml": "^3.14.0",
+    "faker": "^5.1.0",
+    "local-web-server": "^4.2.1",
+    "nodemon": "^2.0.4",
+    "uid": "^1.0.0",
     "x-ray": "^2.3.4"
   }
 }

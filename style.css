@@ -165,7 +165,7 @@ h2 {
   padding-bottom: 5px;
 }
 
-.pokemon_list .pokemon:nth-child(n+4) {
+.pokemon_list .pokemon:nth-child(n + 4) {
   border-bottom: 0;
   border: 0;
   padding-bottom: 0;
@@ -208,5 +208,62 @@ h2 {
 
   #card_text {
     font-size: 24px;
+  }
+}
+
+.resultados_partidas {
+  --text-align: center;
+}
+
+.resultados_partidas li {
+  padding-left: 0;
+  display: static;
+}
+
+.resultados_partidas .resultado1-right {
+  display: none;
+}
+
+.resultados_partidas .jogador-vs {
+  display: none;
+}
+
+.resultados_partidas .jogador1,
+.resultados_partidas .jogador2 {
+  display: flex;
+}
+
+.resultados_partidas input {
+  width: 30px;
+  --height: 22px;
+  margin: 0 5px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.resultados_partidas .jogador-nome {
+  width: 130px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 396px) {
+  .resultados_partidas li {
+    display: flex;
+    justify-content: center;
+  }
+  .resultados_partidas .resultado1-left {
+    display: none;
+  }
+  .resultados_partidas .resultado1-right {
+    display: inline-block;
+  }
+  .resultados_partidas .jogador1 .jogador-nome {
+    text-align: right;
+  }
+  .resultados_partidas .jogador-vs {
+    display: block;
   }
 }
