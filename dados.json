@@ -209,20 +209,20 @@
             {
               "jogador1_id": "b2fr8fpt6zo",
               "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
+              "pontos1": "3",
               "pontos2": 0
             },
             {
               "jogador1_id": "4l227tvrle7",
               "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "1",
+              "pontos2": "2"
             },
             {
               "jogador1_id": "4l227tvrle7",
               "jogador2_id": "ax508j4j1sw",
               "pontos1": 0,
-              "pontos2": 0
+              "pontos2": "3"
             }
           ]
         },
@@ -240,7 +240,7 @@
             {
               "jogador1_id": "fwtttrjulut",
               "jogador2_id": "tt8ifciaf5j",
-              "pontos1": 0,
+              "pontos1": "3",
               "pontos2": 0
             },
             {
