@@ -143,14 +143,12 @@ h2 {
   list-style: none;
 }
 
-.bloco_itens li:nth-child(1),
-.bloco_itens li:nth-child(2) {
+.bloco_itens li:nth-child(5) {
   color: hsl(0, 0%, 80%);
   background-color: hsl(0, 0%, 10%);
 }
 
-.bloco_itens li:nth-child(3),
-.bloco_itens li:nth-child(4) {
+.bloco_itens li{
   color: hsl(0, 0%, 10%);
   background-color: hsl(0, 0%, 80%);
 }
@@ -215,48 +213,48 @@ h2 {
   }
 }
 
-.resultados_partidas {
-  --text-align: center;
-}
-
-.resultados_partidas li {
-  padding-left: 0;
+.jogo {
   display: static;
 }
 
-.resultados_partidas .resultado1-left , 
-.resultados_partidas .resultado1-right
-.resultados_partidas .resultado2{
+.resultados_partidas li{
+  padding-left: 0;
+}
+
+.jogo .resultado1-left , 
+.jogo .resultado1-right
+.jogo .resultado2{
   display: inline-block;
   
 }
 
-.resultados_partidas .resultado1-right {
+.jogo .resultado1-right {
   display: none;
 }
 
-.resultados_partidas .jogador-vs {
+.jogo .jogador-vs {
   display: none;
 }
 
-.resultados_partidas .jogador1,
-.resultados_partidas .jogador2 {
+.jogo .jogador1,
+.jogo .jogador2 {
   display: flex;
+  align-items: center;
 }
 
-.resultados_partidas input {
+.jogo input {
   width: 30px;
-  --height: 22px;
   margin: 0 5px;
   box-sizing: border-box;
   text-align: center;
+  height: 22px;
 }
 
-.resultados_partidas input, .resultados_partidas .jogador1{
+.jogo input, .jogo .jogador1{
   padding-bottom: 2px;
 }
 
-.resultados_partidas .jogador-nome {
+.jogo .jogador-nome {
   width: 130px;
   display: inline-block;
   overflow: hidden;
@@ -264,23 +262,24 @@ h2 {
 }
 
 @media (min-width: 396px) {
-  .resultados_partidas li {
+  .jogo {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-  .resultados_partidas .resultado1-left {
+  .jogo .resultado1-left {
     display: none;
   }
-  .resultados_partidas .resultado1-right {
+  .jogo .resultado1-right {
     display: inline-block;
   }
-  .resultados_partidas .jogador1 .jogador-nome {
+  .jogo .jogador1 .jogador-nome {
     text-align: right;
   }
-  .resultados_partidas .jogador-vs {
+  .jogo .jogador-vs {
     display: block;
   }
-  .resultados_partidas input, .resultados_partidas .jogador1{
+  .jogo input, .jogo .jogador1{
     padding-bottom: 0;
   }
 }
