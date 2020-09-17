@@ -393,8 +393,8 @@
             {
               "jogador1_id": "6mpp7t0ze5c",
               "jogador2_id": "1wau802zdkv",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "3",
+              "pontos2": "0"
             },
             {
               "jogador1_id": "6mpp7t0ze5c",
@@ -405,14 +405,14 @@
             {
               "jogador1_id": "r6okmf0sv61",
               "jogador2_id": "1wau802zdkv",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "0",
+              "pontos2": "3"
             },
             {
               "jogador1_id": "r6okmf0sv61",
               "jogador2_id": "zen3ym5wvt0",
               "pontos1": 0,
-              "pontos2": 0
+              "pontos2": "3"
             }
           ]
         },
@@ -424,8 +424,8 @@
             {
               "jogador1_id": "1y2a76wme9c",
               "jogador2_id": "fwtttrjulut",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "1",
+              "pontos2": "2"
             },
             {
               "jogador1_id": "1y2a76wme9c",
@@ -442,8 +442,8 @@
             {
               "jogador1_id": "dqf7ea6e227",
               "jogador2_id": "4o5n8492b9a",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "1",
+              "pontos2": "2"
             }
           ]
         },
