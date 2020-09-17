@@ -6,24 +6,38 @@ var output = "";
 
 function main() {
   const dados = require("./dados.json");
-  var paginas = ["rodadas", "duplas"];
-  var silph = require("./silph.json");
-
-
-  for (var pagina of paginas) {
-    output = "";
-    switch (pagina) {
-      case "rodadas":
-        rodadas(dados);
-        break;
-      case "duplas":
-        duplas(dados, silph);
-        break;
-    }
-    var input = fs.readFileSync(pagina + "_template.html", "utf-8");
-    var final = input.replace("#" + pagina + "#", output);
-    fs.writeFileSync(pagina + ".html", final, "utf-8");
+  var silph = require("./silph.json");  
+  output = "";
+  duplas(dados, silph);
+  cria_pagina("duplas");
+  
+  output = "";
+  var i = 0;
+  for (const rodada of dados.rodadas) {
+    i++;
+    write("<div>");
+    write("<a href='rodada_"+ i +".html'>Rodada #"+ i +"</a>");
+    write("</div>");
   }
+  cria_pagina("rodadas_menu");
+
+  i=0;
+  for (const rodada of dados.rodadas) {
+    i++;
+    output = "";
+    rodadas(dados, rodada, i);
+    cria_pagina("rodada_" + i, "rodadas");
+  }
+      
+  
+}
+
+function cria_pagina(pagina, template){
+  if (!template) template = pagina;
+    var input = fs.readFileSync(template + "_template.html", "utf-8");
+    var final = input.replace("#" + template + "#", output);
+    fs.writeFileSync(pagina + ".html", final, "utf-8");  
+    
 }
 
 function duplas(dados, silph) {
@@ -81,12 +95,10 @@ function fixname(name) {
   return name;
 }
 
-function rodadas(dados) {
-  var j = 0;
-  for (var rodada of dados.rodadas) {
+function rodadas(dados, rodada, rodada_indice) {
     var i = 0;
-    j++;
-    write(`<h2>Rodada ${j}</h2>`);
+
+    write(`<h2>Rodada ${rodada_indice}</h2>`);
     for (var partida of rodada.partidas) {
       i++;
 
@@ -134,7 +146,7 @@ function rodadas(dados) {
       </div>
           `);      
     }
-  }
+  
 }
 
 function criaJogo(nome1, pontos1, nome2, pontos2){

@@ -65,13 +65,24 @@ h2 {
   text-align: center;
 }
 
-#menu a {
+#menu a , #rodadas_menu a{
   color: #ccc;
   font-size: 1.6rem;
   font-weight: 900;
 }
 
-#menu a:hover {
+#rodadas_menu a{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: #777;
+  color: #eee;
+}
+
+
+#menu a:hover , #rodadas_menu a:hover{
   color: rgb(157, 219, 100);
 }
 
@@ -81,7 +92,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-#menu .selected {
+#menu .selected , #rodadas_menu .selected{
   color: rgb(240, 184, 29);
 }
 
@@ -283,3 +294,4 @@ h2 {
     padding-bottom: 0;
   }
 }
+
