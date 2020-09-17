@@ -9,18 +9,32 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
+  <body>    
     <div id="container">
         <div id="menu">
             <a href="index.html">Home</a>
             <a href="duplas.html" class="selected">Duplas</a>
             <a href="rodadas_menu.html">Rodadas</a>      
         </div>
-      <div id="duplas">
-        
+      <div id="duplas">        
         #duplas#
       </div>
     </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const d1 = urlParams.get('d1');
+      const d2 = urlParams.get('d2');
+      if (d1&&d2){
+        document.querySelector(".dupla:nth-child(" + d1 + ")").classList.remove("hidden");
+        document.querySelector(".dupla:nth-child(" + d2 + ")").classList.remove("hidden");
+      } 
+      else{
+        document.querySelectorAll(".dupla").forEach((value)=>{
+          value.classList.remove("hidden");
+        })  
+
+      } 
+
+    </script>
   </body>
 </html>

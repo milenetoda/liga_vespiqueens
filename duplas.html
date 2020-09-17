@@ -9,17 +9,15 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
+  <body>    
     <div id="container">
         <div id="menu">
             <a href="index.html">Home</a>
             <a href="duplas.html" class="selected">Duplas</a>
             <a href="rodadas_menu.html">Rodadas</a>      
         </div>
-      <div id="duplas">
-        
-        <div class="dupla bloco">
+      <div id="duplas">        
+        <div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #1</h3>
 </div>
@@ -96,7 +94,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #2</h3>
 </div>
@@ -173,7 +171,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #3</h3>
 </div>
@@ -250,7 +248,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #4</h3>
 </div>
@@ -327,7 +325,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #5</h3>
 </div>
@@ -404,7 +402,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #6</h3>
 </div>
@@ -481,7 +479,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #7</h3>
 </div>
@@ -558,7 +556,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #8</h3>
 </div>
@@ -635,7 +633,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #9</h3>
 </div>
@@ -712,7 +710,7 @@
 </li>
 </ol>
 </div>
-<div class="dupla bloco">
+<div class="dupla bloco hidden">
 <div class="bloco_numero">
 <h3>Dupla #10</h3>
 </div>
@@ -792,5 +790,21 @@
 
       </div>
     </div>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const d1 = urlParams.get('d1');
+      const d2 = urlParams.get('d2');
+      if (d1&&d2){
+        document.querySelector(".dupla:nth-child(" + d1 + ")").classList.remove("hidden");
+        document.querySelector(".dupla:nth-child(" + d2 + ")").classList.remove("hidden");
+      } 
+      else{
+        document.querySelectorAll(".dupla").forEach((value)=>{
+          value.classList.remove("hidden");
+        })  
+
+      } 
+
+    </script>
   </body>
 </html>

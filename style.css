@@ -96,6 +96,11 @@ h2 {
   color: rgb(240, 184, 29);
 }
 
+.partida {
+  cursor: pointer;
+}
+
+
 .bloco_itens {
   list-style-position: inside;
   padding-left: 0;
@@ -154,7 +159,7 @@ h2 {
   list-style: none;
 }
 
-.bloco_itens li:nth-child(5) {
+.bloco_itens li:nth-child(5) , .dupla li:nth-child(1),  .dupla li:nth-child(3){
   color: hsl(0, 0%, 80%);
   background-color: hsl(0, 0%, 10%);
 }
@@ -163,6 +168,11 @@ h2 {
   color: hsl(0, 0%, 10%);
   background-color: hsl(0, 0%, 80%);
 }
+
+.hidden{
+  display: none !important;
+}
+
 
 .pokemon_list {
   display: flex;

@@ -20,7 +20,7 @@
       <div id="rodadas">
         <h2>Rodada 3</h2>
 
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="1" data-d2="5">
         <div class="bloco_numero">
           <h3>Partida #1</h3>
         </div>
@@ -112,7 +112,7 @@
       </div>
           
 
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="2" data-d2="10">
         <div class="bloco_numero">
           <h3>Partida #2</h3>
         </div>
@@ -204,7 +204,7 @@
       </div>
           
 
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="3" data-d2="7">
         <div class="bloco_numero">
           <h3>Partida #3</h3>
         </div>
@@ -296,7 +296,7 @@
       </div>
           
 
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="4" data-d2="6">
         <div class="bloco_numero">
           <h3>Partida #4</h3>
         </div>
@@ -388,7 +388,7 @@
       </div>
           
 
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="8" data-d2="9">
         <div class="bloco_numero">
           <h3>Partida #5</h3>
         </div>
@@ -482,5 +482,15 @@
 
       </div>
     </div>
+
+    <script>
+      document.querySelectorAll(".partida").forEach(partida => {
+        partida.addEventListener("click", ()=>{
+          var d1 = partida.getAttribute("data-d1");
+          var d2 = partida.getAttribute("data-d2");
+          window.location = "/duplas.html?d1=" + d1 + "&d2=" + d2;
+        })
+      });      
+    </script>
   </body>
 </html>

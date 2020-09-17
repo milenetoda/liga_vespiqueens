@@ -47,7 +47,7 @@ function duplas(dados, silph) {
     var time1 = silph[participante1.nome.toLowerCase()];
     var time2 = silph[participante2.nome.toLowerCase()];
 
-    write(`<div class="dupla bloco">`);
+    write(`<div class="dupla bloco hidden">`);
     write(`<div class="bloco_numero">`);
     write(`<h3>Dupla #${dupla.nome}</h3>`);
     write(`</div>`);
@@ -101,9 +101,11 @@ function rodadas(dados, rodada, rodada_indice) {
     write(`<h2>Rodada ${rodada_indice}</h2>`);
     for (var partida of rodada.partidas) {
       i++;
+      var dupla1_num = busca_dupla(dados, partida.dupla1_id).nome;
+      var dupla2_num = busca_dupla(dados, partida.dupla2_id).nome;
 
       write(`
-      <div class="partida bloco">
+      <div class="partida bloco" data-d1="${dupla1_num}" data-d2="${dupla2_num}">
         <div class="bloco_numero">
           <h3>Partida #${i}</h3>
         </div>
