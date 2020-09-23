@@ -186,7 +186,18 @@
               <input type="text" v-model="jogo.pontos2" />
               <span class="jogador"
                 >{{find_jogador(jogo.jogador2_id).nome}}</span
-              >
+              >              
+            </div>
+            <div>Vencedor da partida: 
+              <select v-model="partida.vencedor_id">
+                <option :value="partida.dupla1_id">
+                  Dupla do {{find_by_id(partida.dupla1_id).participante1_id}}
+                </option>
+                <option :value="dupla.dupla2_id">
+                  Dupla do {{find_by_id(partida.dupla2_id).participante1_id}}
+                </option>
+              </select>
+              <button @click="adiciona_vencedor(partida)">Adiciona vencedor</button>
             </div>
           </div>
         </div>
@@ -379,6 +390,11 @@
               jogador_id
             );
           },
+          adiciona_vencedor(partida){
+            this.push({
+              vencedor_id: this.vencedor_id,              
+            });
+          }
         },
       });
     </script>

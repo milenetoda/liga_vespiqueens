@@ -40,6 +40,82 @@ function cria_pagina(pagina, template){
     
 }
 
+function resultados(dados){
+  var i = 0;
+  var rodadas = dados.rodadas;
+
+  write(`<h2>Resultados</h2>`);
+  for (var partida of rodadas) {
+    i++;
+    
+    write(`
+    <div class="rodada">
+      <div class="bloco_numero">
+        <h3>Rodada #${i}</h3>
+      </div>
+
+      <ol class="bloco_itens resultados_rodada">
+    `)
+    var resultado = {
+      dupla1 : "",
+      pontos1 : 0,
+      dupla2 : "",
+      pontos2 : 0,
+    };
+    
+    var contador = 0;
+    for (const jogo of partida.jogos) {
+      var nome1 = busca_participante(dados, jogo.jogador1_id).nome;
+      var nome2 = busca_participante(dados, jogo.jogador2_id).nome;
+      if( contador === 0){
+        resultado.dupla1 += nome1;
+        resultado.dupla2 += nome2;
+      }
+      if (contador === 1){
+        resultado.dupla2 += "<br/>" + nome2;
+      }
+      if (contador === 2){
+        resultado.dupla1 += "<br/>" + nome1;
+      }
+      contador++;
+
+      resultado.pontos1 += parseInt(jogo.pontos1);
+      resultado.pontos2 += parseInt(jogo.pontos2);
+    }
+    write(`<li>`)
+    criaResultado(resultado.dupla1, resultado.pontos1, resultado.dupla2, resultado.pontos2);
+    write(`</li>`)
+    write(`
+      </ol>
+    </div>
+        `);      
+  }
+}
+
+function criaResultado(dupla1, pontos1, rodadasv1, dupla2, pontos2, rodadasv2){
+  write(`
+  <div class="dupla">
+    <table>
+      <tr>
+        <th>Dupla</th>
+        <th>Pontuação</th>
+        <th>Rodadas Vencidas</th>
+      </tr>
+      <tr>
+        <td>${dupla1}</td>
+        <td>${pontos1}</td>
+        <td>${rodadasv1}</td>
+      </tr>
+      <tr>
+        <td>${dupla2}</td>
+        <td>${pontos2}</td>
+        <td>${rodadasv2}</td>
+      </tr>
+    </table> 
+  </div>
+  `)
+}
+
 function duplas(dados, silph) {
   for (var dupla of dados.duplas) {
     var participante1 = busca_participante(dados, dupla.participante1_id);
