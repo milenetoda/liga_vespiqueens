@@ -193,7 +193,8 @@
               "pontos1": "2",
               "pontos2": "1"
             }
-          ]
+          ],
+          "vencedor_id": "8gywcczcxsf"
         },
         {
           "dupla1_id": "iv9hmd42z1t",
@@ -224,7 +225,8 @@
               "pontos1": "3",
               "pontos2": "0"
             }
-          ]
+          ],
+          "vencedor_id": "iv9hmd42z1t"
         },
         {
           "dupla1_id": "x3e9wk13tf6",
@@ -255,7 +257,8 @@
               "pontos1": "3",
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "x3e9wk13tf6"
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -286,7 +289,8 @@
               "pontos1": "2",
               "pontos2": "1"
             }
-          ]
+          ],
+          "vencedor_id": "1knhfq3502f"
         },
         {
           "dupla1_id": "yna9w5d1s10",
@@ -317,7 +321,8 @@
               "pontos1": "1",
               "pontos2": "2"
             }
-          ]
+          ],
+          "vencedor_id": "yna9w5d1s10"
         }
       ]
     },
@@ -352,7 +357,8 @@
               "pontos1": "2",
               "pontos2": "1"
             }
-          ]
+          ],
+          "vencedor_id": "yna9w5d1s10"
         },
         {
           "dupla1_id": "5uxg1hffj0q",
@@ -383,7 +389,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "iv9hmd42z1t"
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -445,7 +452,8 @@
               "pontos1": "1",
               "pontos2": "2"
             }
-          ]
+          ],
+          "vencedor_id": "x3e9wk13tf6"
         },
         {
           "dupla1_id": "0y36pc20g0a",
@@ -476,7 +484,8 @@
               "pontos1": "3",
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "0y36pc20g0a"
         }
       ]
     },
@@ -511,7 +520,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "b09zj675v1r"
         },
         {
           "dupla1_id": "5uxg1hffj0q",
@@ -542,7 +552,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "0y36pc20g0a"
         },
         {
           "dupla1_id": "8gywcczcxsf",
@@ -573,7 +584,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "x3e9wk13tf6"
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -604,7 +616,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "iv9hmd42z1t"
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -635,7 +648,8 @@
               "pontos1": "2",
               "pontos2": "1"
             }
-          ]
+          ],
+          "vencedor_id": "1knhfq3502f"
         }
       ]
     },
@@ -670,7 +684,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "4apvydjvggy"
         },
         {
           "dupla1_id": "8gywcczcxsf",
@@ -701,7 +716,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "iv9hmd42z1t"
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -732,7 +748,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "0y36pc20g0a"
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -763,7 +780,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "b09zj675v1r"
         },
         {
           "dupla1_id": "yna9w5d1s10",
@@ -794,7 +812,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "x3e9wk13tf6"
         }
       ]
     },
@@ -829,7 +848,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "0y36pc20g0a"
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -860,7 +880,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "4apvydjvggy"
         },
         {
           "dupla1_id": "x3e9wk13tf6",
@@ -891,7 +912,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "iv9hmd42z1t"
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -922,7 +944,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "5uxg1hffj0q"
         },
         {
           "dupla1_id": "yna9w5d1s10",
@@ -953,7 +976,8 @@
               "pontos1": 0,
               "pontos2": 0
             }
-          ]
+          ],
+          "vencedor_id": "b09zj675v1r"
         }
       ]
     }

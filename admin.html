@@ -73,7 +73,7 @@
     <div id="app" v-cloak>
       <div id="header">
         <h1>Admin</h1>
-        <button @click="salvar">Salvar</button>
+        <button @click="salvar">Gerar</button>
         <span v-if="resultado == 'ok'">Dados salvos com sucesso.</span>
         <span v-if="resultado == 'erro'">Erro ao salvar os dados.</span>
       </div>
@@ -188,16 +188,11 @@
                 >{{find_jogador(jogo.jogador2_id).nome}}</span
               >              
             </div>
-            <div>Vencedor da partida: 
-              <select v-model="partida.vencedor_id">
-                <option :value="partida.dupla1_id">
-                  Dupla do {{find_by_id(partida.dupla1_id).participante1_id}}
-                </option>
-                <option :value="dupla.dupla2_id">
-                  Dupla do {{find_by_id(partida.dupla2_id).participante1_id}}
-                </option>
-              </select>
-              <button @click="adiciona_vencedor(partida)">Adiciona vencedor</button>
+            <div v-if="calcula_resultado(partida)">
+              Vencedor da partida: {{calcula_resultado(partida)}}
+            </div>
+            <div v-else style="color: red">
+              Vencedor da partida: DESEMPATAR
             </div>
           </div>
         </div>
@@ -345,6 +340,7 @@
               dupla1_id: this.partida.dupla1_id,
               dupla2_id: this.partida.dupla2_id,
               partida_id: this.partida.partida_id,
+              vencedor_id: "",
               jogos: [
                 {
                   jogador1_id: participante1.participante_id,
@@ -377,12 +373,22 @@
           remove_partida(partida, rodada) {
             rodada.partidas.splice(rodada.partidas.indexOf(partida), 1);
           },
+
           find_by_id(array, nome_id, valor_id) {
             for (const item of array) {
               if (item[nome_id] === valor_id) return item;
             }
             return null;
           },
+
+          find_dupla(dupla_id){
+            return this.find_by_id(
+              this.duplas,
+              "dupla_id",
+              dupla_id
+            )
+          },
+
           find_jogador(jogador_id) {
             return this.find_by_id(
               this.participantes,
@@ -390,10 +396,53 @@
               jogador_id
             );
           },
-          adiciona_vencedor(partida){
-            this.push({
-              vencedor_id: this.vencedor_id,              
-            });
+
+          dupla_get_nomes(dupla_id){
+            var dupla = this.find_dupla(dupla_id);
+            var nomes = this.find_jogador(dupla.participante1_id).nome + "/" +
+                        this.find_jogador(dupla.participante2_id).nome;
+            return nomes;
+          },
+
+          calcula_resultado(partida){
+            var vitorias_dupla1 = 0;
+            var vitorias_dupla2 = 0;
+
+            var total_pontos1 = 0;
+            var total_pontos2 = 0;
+
+            for (const jogo of partida.jogos) { 
+              var p1 = parseInt(jogo.pontos1);
+              var p2 = parseInt (jogo.pontos2);
+
+              total_pontos1 += p1;
+              total_pontos2 += p2;
+
+              if ( p1 > p2){
+                vitorias_dupla1++;
+              } else {
+                vitorias_dupla2++;
+              }
+            }
+
+            if (total_pontos1 > total_pontos2){
+              partida.vencedor_id = partida.dupla1_id;
+            } else if (total_pontos1 < total_pontos2){
+              partida.vencedor_id = partida.dupla2_id;
+            } else {
+                if (vitorias_dupla1 > vitorias_dupla2) {
+                  partida.vencedor_id = partida.dupla1_id;
+                } else if (vitorias_dupla1 < vitorias_dupla2){
+                  partida.vencedor_id = partida.dupla2_id;
+                } else {
+                  //Desempatar
+                }
+            }
+
+            if (!partida.vencedor_id){
+              return ""
+            }
+            return this.dupla_get_nomes(partida.vencedor_id);
           }
         },
       });

@@ -242,6 +242,10 @@ h2 {
   padding-left: 0;
 }
 
+.resultados_partidas li.vencedor_partida{
+  text-align: center;
+}
+
 .jogo .resultado1-left , 
 .jogo .resultado1-right
 .jogo .resultado2{
@@ -252,6 +256,8 @@ h2 {
 .jogo .resultado1-right {
   display: none;
 }
+
+
 
 .jogo .jogador-vs {
   display: none;

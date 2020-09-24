@@ -219,6 +219,14 @@ function rodadas(dados, rodada, rodada_indice) {
       write(`<li>`)
       criaJogo(resultado.dupla1, resultado.pontos1, resultado.dupla2, resultado.pontos2);
       write(`</li>`)
+      write(`<li class="vencedor_partida" >`)
+      if (partida.vencedor_id){
+        write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
+      }
+      else {
+        write ("DESEMPATAR");
+      }
+      write(`</li>`)
       write(`
         </ol>
       </div>
@@ -257,6 +265,13 @@ function busca_dupla(dados, id) {
     dados.duplas,
     "dupla_id",
     id)
+}
+
+function dupla_get_nomes(dados, dupla_id){
+  var dupla = busca_dupla(dados, dupla_id);
+  var nomes = busca_participante(dados, dupla.participante1_id).nome + "/" +
+              busca_participante(dados, dupla.participante2_id).nome;
+  return nomes;
 }
 
 function find_by_id(array, nome_id, valor_id) {
