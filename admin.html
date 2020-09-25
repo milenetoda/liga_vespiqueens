@@ -176,6 +176,7 @@
         <div class="rodada-lista">
           <div v-for="(partida, j) in rodada.partidas" class="partida">
             <h2>Rodada {{i+1}} - Partida {{j+1}}</h2>
+            {{partida.dupla1_id}} / {{partida.dupla2_id}}
             <button @click="remove_partida(partida, rodada)">X</button>
             <div v-for="jogo in partida.jogos" class="jogo">
               <span class="jogador"
@@ -188,11 +189,13 @@
                 >{{find_jogador(jogo.jogador2_id).nome}}</span
               >              
             </div>
-            <div v-if="calcula_resultado(partida)">
-              Vencedor da partida: {{calcula_resultado(partida)}}
+
+
+            <div v-if="calcula_resultado(partida) !== '' && calcula_resultado(partida) !== 'Empate!'">
+              Vencedor: {{calcula_resultado(partida)}}
             </div>
-            <div v-else style="color: red">
-              Vencedor da partida: DESEMPATAR
+            <div v-if="calcula_resultado(partida) === 'Empate!'" style="color: red">
+              DESEMPATAR              
             </div>
           </div>
         </div>
@@ -411,42 +414,47 @@
             var total_pontos1 = 0;
             var total_pontos2 = 0;
 
+            var cont_0x0 = 0;
+
             for (const jogo of partida.jogos) { 
               var p1 = parseInt(jogo.pontos1);
               var p2 = parseInt (jogo.pontos2);
+              
+              if (p1 === 0 && p2 ===0 ){
+                cont_0x0++;
+
+                if (cont_0x0 === 4){
+                  partida.vencedor_id = "";
+                  return "";
+                }                
+              }
 
               total_pontos1 += p1;
               total_pontos2 += p2;
 
               if ( p1 > p2){
                 vitorias_dupla1++;
-              } else {
+              } else if( p1 < p2){
                 vitorias_dupla2++;
-              }
+              } 
             }
 
             if (total_pontos1 > total_pontos2){
               partida.vencedor_id = partida.dupla1_id;
-              console.log("if1 "+partida.vencedor_id);
             } else if (total_pontos1 < total_pontos2){
               partida.vencedor_id = partida.dupla2_id;
-              console.log("if2 "+partida.vencedor_id);
             } else {
                 if (vitorias_dupla1 > vitorias_dupla2) {
                   partida.vencedor_id = partida.dupla1_id;
-                  console.log("if3 "+partida.vencedor_id);
                 } else if (vitorias_dupla1 < vitorias_dupla2){
                   partida.vencedor_id = partida.dupla2_id;
-                  console.log("if4 "+partida.vencedor_id);
                 } else {
-                  //Desempatar
+                  partida.vencedor_id = "";
                 }
             }
 
-            console.log("Vencedor id: "+partida.vencedor_id);
-
             if (!partida.vencedor_id){
-              return ""
+              return "Empate!"
             }
             return this.dupla_get_nomes(partida.vencedor_id);
           }

@@ -421,7 +421,8 @@
               "pontos1": 0,
               "pontos2": "3"
             }
-          ]
+          ],
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -553,7 +554,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "0y36pc20g0a"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "8gywcczcxsf",
@@ -585,7 +586,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "x3e9wk13tf6"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -685,7 +686,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "4apvydjvggy"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "8gywcczcxsf",
@@ -717,7 +718,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "iv9hmd42z1t"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -749,7 +750,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "0y36pc20g0a"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -781,7 +782,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "b09zj675v1r"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "yna9w5d1s10",
@@ -813,7 +814,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "x3e9wk13tf6"
+          "vencedor_id": ""
         }
       ]
     },
@@ -849,7 +850,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "0y36pc20g0a"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "yjo1eut4tg2",
@@ -881,7 +882,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "4apvydjvggy"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "x3e9wk13tf6",
@@ -913,7 +914,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "iv9hmd42z1t"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "1knhfq3502f",
@@ -945,7 +946,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "5uxg1hffj0q"
+          "vencedor_id": ""
         },
         {
           "dupla1_id": "yna9w5d1s10",
@@ -977,7 +978,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": "b09zj675v1r"
+          "vencedor_id": ""
         }
       ]
     }
