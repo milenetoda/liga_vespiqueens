@@ -12,30 +12,40 @@ function main() {
   cria_pagina("duplas");
   
   output = "";
-  var i = 0;
-  for (const rodada of dados.rodadas) {
-    i++;
+  
+  for (let i=1; i<=dados.rodadas.length; i++) {    
     write("<div>");
     write("<a href='rodada_"+ i +".html'>Rodada #"+ i +"</a>");
     write("</div>");
   }
   cria_pagina("rodadas_menu");
 
-  i=0;
+  var i=0;
   for (const rodada of dados.rodadas) {
     i++;
     output = "";
     rodadas(dados, rodada, i);
     cria_pagina("rodada_" + i, "rodadas");
   }
-      
   
+  output = "";
+  tabela(dados);
+  cria_pagina("tabela");
+
+  output = "";
+  cria_pagina("index");
+
 }
 
 function cria_pagina(pagina, template){
   if (!template) template = pagina;
     var input = fs.readFileSync(template + "_template.html", "utf-8");
-    var final = input.replace("#" + template + "#", output);
+    var menu = fs.readFileSync("menu_template.html", "utf-8");
+    
+    menu = menu.replace('data-' + template, 'class="selected"');
+
+    var final = input.replace("#" + template + "#", output)
+                .replace("#menu#", menu);
     fs.writeFileSync(pagina + ".html", final, "utf-8");  
     
 }
@@ -93,6 +103,88 @@ function fixname(name) {
       return "Castform R";
   }
   return name;
+}
+
+function tabela(dados){
+  write(`
+  <div id="legenda">#: Ranking | D: Dupla | P: Pontos | V: Vitórias</div>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>D</th>
+      <th>Nomes</th>
+      <th>P</th>
+      <th>V</th>
+    </tr>
+  </thead>
+  <tbody>  `);
+
+  var i = 1;
+
+  var classificacao = gera_classificacao(dados);
+
+  for (const linha of classificacao) {
+    write(`
+    <tr>
+      <td>${i}</td>
+      <td>${linha.dupla_numero}</td>
+      <td class="text-left">${dupla_get_nomes(dados, linha.dupla_id)}</td>
+      <td>${linha.pontos}</td>
+      <td>${linha.vitorias}</td>
+    </tr>
+    `);
+
+    i++
+  }
+  
+  write(`
+  </tbody>
+  </table>`);
+
+}
+
+function gera_classificacao(dados){
+  var classificacao = {};
+
+  for (const dupla of dados.duplas) {
+    classificacao[dupla.dupla_id] = {
+      dupla_numero: dupla.nome,
+      dupla_id: dupla.dupla_id,
+      pontos: 0,
+      vitorias: 0,
+    }
+  }
+
+  for (const rodada of dados.rodadas) {
+    for (const partida of rodada.partidas) {
+        var d1 = classificacao[partida.dupla1_id];
+        var d2 = classificacao[partida.dupla2_id];
+      for (const jogo of partida.jogos) {
+        d1.pontos += parseInt(jogo.pontos1);
+        d2.pontos += parseInt(jogo.pontos2);
+      }
+      if (partida.vencedor_id && partida.vencedor_id !== 'Empate!'){
+        classificacao[partida.vencedor_id].vitorias++;
+      }
+    }
+  }
+
+  var lista = Object.values(classificacao); 
+
+  lista.sort(function(linha1, linha2){
+    var criterio1 = linha2.pontos-linha1.pontos;
+    if (criterio1 != 0){
+      return criterio1;
+    }
+    var criterio2 = linha2.vitorias-linha1.vitorias;
+      return criterio2;
+
+  })
+
+
+  
+  return lista;
 }
 
 function rodadas(dados, rodada, rodada_indice) {
@@ -198,7 +290,7 @@ function busca_dupla(dados, id) {
 
 function dupla_get_nomes(dados, dupla_id){
   var dupla = busca_dupla(dados, dupla_id);
-  var nomes = busca_participante(dados, dupla.participante1_id).nome + "/" +
+  var nomes = busca_participante(dados, dupla.participante1_id).nome + " / " +
               busca_participante(dados, dupla.participante2_id).nome;
   return nomes;
 }

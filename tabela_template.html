@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rodada</title>
+    <title>Tabela</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <link
@@ -14,19 +14,9 @@
   <body>
     <div id="container">
       #menu#
-      <div id="rodadas">
-        #rodadas#
+      <div id="tabela">
+        #tabela#
       </div>
     </div>
-
-    <script>
-      document.querySelectorAll(".partida").forEach(partida => {
-        partida.addEventListener("click", ()=>{
-          var d1 = partida.getAttribute("data-d1");
-          var d2 = partida.getAttribute("data-d2");
-          window.location = "duplas.html?d1=" + d1 + "&d2=" + d2;
-        })
-      });      
-    </script>
   </body>
 </html>

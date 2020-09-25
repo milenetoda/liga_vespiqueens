@@ -65,8 +65,16 @@ h2 {
   border-radius: 5px;
 }
 
-#menu a , #rodadas_menu a{
+.svg_home{
+  display: block;
+  height: 31px;
+  width: 31px;
+  margin: 2px 0;
+}
+
+#menu a , #rodadas_menu a, .svg_home{
   color: #ccc;
+  fill: #ccc;
   font-size: 1.6rem;
   font-weight: 900;
 }
@@ -82,8 +90,19 @@ h2 {
 }
 
 
-#menu a:hover , #rodadas_menu a:hover{
+#menu a:hover , #rodadas_menu a:hover , .svg_home:hover{
   color: rgb(157, 219, 100);
+  fill: rgb(157, 219, 100);
+}
+
+#menu a{
+  font-size: 1.4rem;
+}
+
+@media (min-width: 396px){
+  #menu a{
+    font-size: 1.6rem;
+  } 
 }
 
 #menu {
@@ -92,8 +111,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-#menu .selected , #rodadas_menu .selected{
+#menu .selected , #rodadas_menu .selected , #menu .selected .svg_home{
   color: rgb(240, 184, 29);
+  fill: rgb(240, 184, 29);
 }
 
 .partida {
@@ -311,3 +331,33 @@ h2 {
   }
 }
 
+th {
+  color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 0%, 10%);
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+tbody tr {
+  color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 80%);
+}
+
+.text-left {
+  text-align: left;
+}
+
+#legenda {
+  font-size: 0.9rem;
+  text-align: center;
+  color: hsl(0, 0%, 80%);
+  margin: 20px 0;
+}
