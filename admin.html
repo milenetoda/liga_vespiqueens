@@ -427,17 +427,23 @@
 
             if (total_pontos1 > total_pontos2){
               partida.vencedor_id = partida.dupla1_id;
+              console.log("if1 "+partida.vencedor_id);
             } else if (total_pontos1 < total_pontos2){
               partida.vencedor_id = partida.dupla2_id;
+              console.log("if2 "+partida.vencedor_id);
             } else {
                 if (vitorias_dupla1 > vitorias_dupla2) {
                   partida.vencedor_id = partida.dupla1_id;
+                  console.log("if3 "+partida.vencedor_id);
                 } else if (vitorias_dupla1 < vitorias_dupla2){
                   partida.vencedor_id = partida.dupla2_id;
+                  console.log("if4 "+partida.vencedor_id);
                 } else {
                   //Desempatar
                 }
             }
+
+            console.log("Vencedor id: "+partida.vencedor_id);
 
             if (!partida.vencedor_id){
               return ""
