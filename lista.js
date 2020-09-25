@@ -221,11 +221,14 @@ function rodadas(dados, rodada, rodada_indice) {
       write(`</li>`)
       write(`<li class="vencedor_partida" >`)
       if (partida.vencedor_id){
-        write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
+        if (partida.vencedor_id !== 'Empate!'){
+          write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
+        }
+        else {
+          write ("DESEMPATAR");
+        }
       }
-      else {
-        write ("DESEMPATAR");
-      }
+            
       write(`</li>`)
       write(`
         </ol>
