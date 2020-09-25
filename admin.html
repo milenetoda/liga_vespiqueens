@@ -449,11 +449,11 @@
                 } else if (vitorias_dupla1 < vitorias_dupla2){
                   partida.vencedor_id = partida.dupla2_id;
                 } else {
-                  partida.vencedor_id = "";
+                  partida.vencedor_id = "Empate!";
                 }
             }
 
-            if (!partida.vencedor_id){
+            if (partida.vencedor_id === "Empate!"){
               return "Empate!"
             }
             return this.dupla_get_nomes(partida.vencedor_id);
