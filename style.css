@@ -58,11 +58,11 @@ input {
 }
 
 h2 {
-  --text-shadow: 1px 1px 4px #ddd, -1px -1px 4px #ddd, 1px -1px 4px #ddd,
-    -1px 1px 4px #ddd;
   font-weight: 900;
-  color: #ccc;
   text-align: center;
+  background-color: rgb(161, 161, 161);
+  color: #000;
+  border-radius: 5px;
 }
 
 #menu a , #rodadas_menu a{
