@@ -219,17 +219,19 @@ function rodadas(dados, rodada, rodada_indice) {
       write(`<li>`)
       criaJogo(resultado.dupla1, resultado.pontos1, resultado.dupla2, resultado.pontos2);
       write(`</li>`)
-      write(`<li class="vencedor_partida" >`)
+      
       if (partida.vencedor_id){
+        write(`<li class="vencedor_partida" >`)
         if (partida.vencedor_id !== 'Empate!'){
           write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
         }
         else {
           write ("DESEMPATAR");
         }
+        write(`</li>`)
       }
             
-      write(`</li>`)
+      
       write(`
         </ol>
       </div>
