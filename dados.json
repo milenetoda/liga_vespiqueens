@@ -570,8 +570,8 @@
             {
               "jogador1_id": "1wau802zdkv",
               "jogador2_id": "4o5n8492b9a",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "1",
+              "pontos2": "2"
             },
             {
               "jogador1_id": "zen3ym5wvt0",
@@ -586,7 +586,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": ""
+          "vencedor_id": "x3e9wk13tf6"
         },
         {
           "dupla1_id": "yjo1eut4tg2",
