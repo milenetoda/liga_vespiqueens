@@ -196,7 +196,13 @@
               Vencedor: {{calcula_resultado(partida)}}
             </div>
             <div v-if="calcula_resultado(partida) === 'Empate!'" style="color: red">
-              DESEMPATAR              
+              DESEMPATAR
+              <select v-model="partida.dupla1_id">
+                <option v-for="dupla in duplas" :value="dupla.dupla_id">
+                  Dupla #{{dupla.nome}}
+                </option>
+              </select>
+              
             </div>
           </div>
         </div>
@@ -345,6 +351,7 @@
               dupla2_id: this.partida.dupla2_id,
               partida_id: this.partida.partida_id,
               vencedor_id: "",
+              id_vencedor_do_desempate: "",
               jogos: [
                 {
                   jogador1_id: participante1.participante_id,
