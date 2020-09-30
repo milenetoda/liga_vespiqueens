@@ -538,7 +538,7 @@
             {
               "jogador1_id": "f5thcqwp2bv",
               "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
+              "pontos1": "3",
               "pontos2": 0
             },
             {
@@ -554,7 +554,7 @@
               "pontos2": "3"
             }
           ],
-          "vencedor_id": "0y36pc20g0a"
+          "vencedor_id": "5uxg1hffj0q"
         },
         {
           "dupla1_id": "8gywcczcxsf",
@@ -564,8 +564,8 @@
             {
               "jogador1_id": "1wau802zdkv",
               "jogador2_id": "fwtttrjulut",
-              "pontos1": "2",
-              "pontos2": "1"
+              "pontos1": "1",
+              "pontos2": "2"
             },
             {
               "jogador1_id": "1wau802zdkv",
