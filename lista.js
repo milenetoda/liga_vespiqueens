@@ -242,7 +242,11 @@ function rodadas(dados, rodada, rodada_indice) {
           write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
         }
         else {
-          write ("DESEMPATAR");
+          if (partida.id_vencedor_do_desempate){
+            write ("Vencedor: " + dupla_get_nomes(dados, partida.id_vencedor_do_desempate) + " (Vencido no desempate)");
+          } else {
+            write ("FAZER PARTIDA EXTRA");
+          }          
         }
         write(`</li>`)
       }
