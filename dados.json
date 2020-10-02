@@ -422,7 +422,8 @@
               "pontos2": "3"
             }
           ],
-          "vencedor_id": "Empate!"
+          "vencedor_id": "Empate!",
+          "id_vencedor_do_desempate": "yjo1eut4tg2"
         },
         {
           "dupla1_id": "1knhfq3502f",

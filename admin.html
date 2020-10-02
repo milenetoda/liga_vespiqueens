@@ -197,9 +197,12 @@
             </div>
             <div v-if="calcula_resultado(partida) === 'Empate!'" style="color: red">
               DESEMPATAR
-              <select v-model="partida.dupla1_id">
-                <option v-for="dupla in duplas" :value="dupla.dupla_id">
-                  Dupla #{{dupla.nome}}
+              <select v-model="partida.id_vencedor_do_desempate">
+                <option :value="partida.dupla1_id">
+                  Dupla {{dupla_get_nomes(partida.dupla1_id)}}
+                </option>
+                <option :value="partida.dupla2_id">
+                  Dupla {{dupla_get_nomes(partida.dupla2_id)}}
                 </option>
               </select>
               
@@ -456,8 +459,10 @@
                   partida.vencedor_id = partida.dupla1_id;
                 } else if (vitorias_dupla1 < vitorias_dupla2){
                   partida.vencedor_id = partida.dupla2_id;
+                } else if (partida.id_vencedor_do_desempate) {
+                  partida.vencedor_id = partida.id_vencedor_do_desempate;
                 } else {
-                  partida.vencedor_id = "Empate!";
+                    partida.vencedor_id = "Empate!";
                 }
             }
 
