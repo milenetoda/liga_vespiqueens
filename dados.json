@@ -609,7 +609,7 @@
               "jogador1_id": "r6okmf0sv61",
               "jogador2_id": "b2fr8fpt6zo",
               "pontos1": 0,
-              "pontos2": 0
+              "pontos2": "3"
             },
             {
               "jogador1_id": "r6okmf0sv61",
@@ -618,7 +618,7 @@
               "pontos2": "1"
             }
           ],
-          "vencedor_id": "yjo1eut4tg2"
+          "vencedor_id": "Empate!"
         },
         {
           "dupla1_id": "1knhfq3502f",
