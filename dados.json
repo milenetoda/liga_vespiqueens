@@ -672,8 +672,8 @@
             {
               "jogador1_id": "f5thcqwp2bv",
               "jogador2_id": "ei5y6aaen0h",
-              "pontos1": 0,
-              "pontos2": 0
+              "pontos1": "2",
+              "pontos2": "1"
             },
             {
               "jogador1_id": "491ksg64e0j",
@@ -688,7 +688,7 @@
               "pontos2": 0
             }
           ],
-          "vencedor_id": ""
+          "vencedor_id": "5uxg1hffj0q"
         },
         {
           "dupla1_id": "8gywcczcxsf",
