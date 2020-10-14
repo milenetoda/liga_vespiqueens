@@ -9,7 +9,7 @@ function main() {
   var silph = require("./silph.json");  
   output = "";
   duplas(dados, silph);
-  cria_pagina("duplas");
+  cria_pagina("index", "duplas");
   
   output = "";
   
@@ -33,7 +33,7 @@ function main() {
   cria_pagina("tabela");
 
   output = "";
-  cria_pagina("index");
+  //cria_pagina("index");
 
 }
 
@@ -101,6 +101,10 @@ function fixname(name) {
       return "Raichu A";
     case "Rainy Castform":
       return "Castform R";
+    case "Cherrim (Sunshine Form)":
+      return "Cherrim S";
+    case "Ninetales (Alolan)":
+      return "Ninetales A";
   }
   return name;
 }

@@ -1,541 +1,27 @@
 {
-  "danilocalvalhan": {
-    "competidor": "danilocalvalhan",
+  "gabzis": {
+    "competidor": "gabzis",
+    "competidor_display": "Gabzis",
     "pokemon": [
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/460.png",
-        "nome": "Abomasnow",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/340.png",
+        "nome": "Whiscash",
         "cp": "1,500"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
         "nome": "Skarmory",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
-        "nome": "Swampert",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
-        "nome": "Cresselia",
-        "cp": "1,496"
-      }
-    ]
-  },
-  "hgp2306": {
-    "competidor": "hgp2306",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
-        "nome": "Ferrothorn",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
-        "nome": "Umbreon",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,500"
-      }
-    ]
-  },
-  "arielruther": {
-    "competidor": "arielruther",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,493"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
-        "nome": "Meganium",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/302.png",
-        "nome": "Sableye",
-        "cp": "1,489"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,492"
-      }
-    ]
-  },
-  "danacrisc": {
-    "competidor": "danacrisc",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
-        "nome": "Meganium",
-        "cp": "1,496"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
         "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,480"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
-        "nome": "Marowak (Alolan)",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,496"
-      }
-    ]
-  },
-  "feanoress": {
-    "competidor": "feanoress",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
-        "nome": "Meganium",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
-        "nome": "Bastiodon",
-        "cp": "1,496"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,496"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/589.png",
-        "nome": "Escavalier",
-        "cp": "1,494"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,480"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
-        "nome": "Swampert",
-        "cp": "1,476"
-      }
-    ]
-  },
-  "ferrodrigues18": {
-    "competidor": "ferrodrigues18",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/68.png",
-        "nome": "Machamp",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/87.png",
-        "nome": "Dewgong",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,492"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/357.png",
-        "nome": "Tropius",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,475"
-      }
-    ]
-  },
-  "kobateruaki": {
-    "competidor": "kobateruaki",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
-        "nome": "Bastiodon",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/426.png",
-        "nome": "Drifblim",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
-        "nome": "Ferrothorn",
-        "cp": "1,496"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,494"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,490"
-      }
-    ]
-  },
-  "felipesp3456": {
-    "competidor": "felipesp3456",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,488"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
-        "nome": "Skarmory",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/275.png",
-        "nome": "Shiftry",
-        "cp": "1,488"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/379.png",
-        "nome": "Registeel",
-        "cp": "1,479"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,482"
-      }
-    ]
-  },
-  "chelrodrigues": {
-    "competidor": "chelrodrigues",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
-        "nome": "Marowak (Alolan)",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
-        "nome": "Ferrothorn",
-        "cp": "1,493"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,492"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
-        "nome": "Umbreon",
-        "cp": "1,483"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,497"
-      }
-    ]
-  },
-  "milenetoda": {
-    "competidor": "milenetoda",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/379.png",
-        "nome": "Registeel",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
-        "nome": "Umbreon",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
-        "nome": "Marowak (Alolan)",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/3.png",
-        "nome": "Venusaur",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,495"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/castform-rainy.png",
-        "nome": "Rainy Castform",
-        "cp": "1,494"
-      }
-    ]
-  },
-  "kobinha23": {
-    "competidor": "kobinha23",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/426.png",
-        "nome": "Drifblim",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,486"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/589.png",
-        "nome": "Escavalier",
-        "cp": "1,496"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
-        "nome": "Meganium",
-        "cp": "1,472"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
-        "nome": "Skarmory",
-        "cp": "1,494"
-      }
-    ]
-  },
-  "barros": {
-    "competidor": "barros",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
-        "cp": "1,482"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,476"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
-        "nome": "Skarmory",
-        "cp": "1,493"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/275.png",
-        "nome": "Shiftry",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
-        "nome": "Toxicroak",
-        "cp": "1,473"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,494"
-      }
-    ]
-  },
-  "dikilua": {
-    "competidor": "dikilua",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/9.png",
-        "nome": "Blastoise",
-        "cp": "1,494"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
-        "nome": "Umbreon",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/448.png",
-        "nome": "Lucario",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
-        "nome": "Skarmory",
-        "cp": "1,489"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/71.png",
-        "nome": "Victreebel",
-        "cp": "1,477"
-      }
-    ]
-  },
-  "vegetassayajin": {
-    "competidor": "vegetassayajin",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
-        "nome": "Ferrothorn",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/40.png",
-        "nome": "Wigglytuff",
-        "cp": "1,497"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/809.png",
-        "nome": "Melmetal",
-        "cp": "1,495"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/226.png",
         "nome": "Mantine",
-        "cp": "1,490"
-      }
-    ]
-  },
-  "augustochrispim": {
-    "competidor": "augustochrispim",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
-        "nome": "Skarmory",
         "cp": "1,496"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/55.png",
-        "nome": "Golduck",
-        "cp": "1,498"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
-        "nome": "Swampert",
-        "cp": "1,491"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
-        "nome": "Ferrothorn",
-        "cp": "1,476"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/426.png",
-        "nome": "Drifblim",
-        "cp": "1,473"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/596.png",
-        "nome": "Galvantula",
-        "cp": "1,500"
-      }
-    ]
-  },
-  "masterph": {
-    "competidor": "masterph",
-    "pokemon": [
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
-        "nome": "Galarian Stunfisk",
-        "cp": "1,500"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
-        "nome": "Altaria",
-        "cp": "1,498"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/40.png",
+        "nome": "Wigglytuff",
+        "cp": "1,496"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
@@ -543,113 +29,271 @@
         "cp": "1,484"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
-        "nome": "Marowak (Alolan)",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
-        "nome": "Swampert",
-        "cp": "1,483"
-      },
-      {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
         "nome": "Meganium",
         "cp": "1,477"
       }
     ]
   },
-  "abmdragond": {
-    "competidor": "abmdragond",
+  "v1v12n": {
+    "competidor": "v1v12n",
+    "competidor_display": "V1v12n",
     "pokemon": [
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
-        "nome": "Azumarill",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/560.png",
+        "nome": "Scrafty",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/340.png",
+        "nome": "Whiscash",
+        "cp": "1,482"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/205.png",
+        "nome": "Forretress",
+        "cp": "1,479"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
+        "nome": "Meganium",
+        "cp": "1,469"
+      }
+    ]
+  },
+  "nathasiaaa": {
+    "competidor": "nathasiaaa",
+    "competidor_display": "nathasiaaa",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/226.png",
+        "nome": "Mantine",
         "cp": "1,494"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/862.png",
-        "nome": "Obstagoon",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
+        "nome": "Ferrothorn",
         "cp": "1,493"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/raichu-alola.png",
-        "nome": "Raichu (Alolan)",
-        "cp": "1,491"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/deoxys-defense.png",
-        "nome": "Deoxys (Defense Forme)",
-        "cp": "1,500"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
         "nome": "Altaria",
-        "cp": "1,479"
+        "cp": "1,497"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/357.png",
-        "nome": "Tropius",
-        "cp": "1,500"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/288.png",
+        "nome": "Vigoroth",
+        "cp": "1,474"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
+        "cp": "1,495"
       }
     ]
   },
-  "dannbarcellos": {
-    "competidor": "dannbarcellos",
+  "naralago": {
+    "competidor": "naralago",
+    "competidor_display": "NaraLago",
     "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
+        "nome": "Hypno",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/36.png",
+        "nome": "Clefable",
+        "cp": "1,500"
+      },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
         "nome": "Skarmory",
         "cp": "1,500"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/379.png",
-        "nome": "Registeel",
-        "cp": "1,498"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,497"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/275.png",
-        "nome": "Shiftry",
-        "cp": "1,500"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/596.png",
+        "nome": "Galvantula",
+        "cp": "1,497"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/340.png",
-        "nome": "Whiscash",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
-        "nome": "Hypno",
-        "cp": "1,499"
-      },
-      {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/93.png",
-        "nome": "Haunter",
-        "cp": "1,499"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/308.png",
+        "nome": "Medicham",
+        "cp": "1,449"
       }
     ]
   },
-  "geofcr7": {
-    "competidor": "geofcr7",
+  "mahack6": {
+    "competidor": "mahack6",
+    "competidor_display": "Mahack6",
     "pokemon": [
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/275.png",
-        "nome": "Shiftry",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
         "cp": "1,500"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/357.png",
-        "nome": "Tropius",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/460.png",
+        "nome": "Abomasnow",
         "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/cherrim-sunshine.png",
+        "nome": "Cherrim (Sunshine Form)",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/385.png",
+        "nome": "Jirachi",
+        "cp": "1,486"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,500"
+      }
+    ]
+  },
+  "mileregou": {
+    "competidor": "mileregou",
+    "competidor_display": "mileregou",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/36.png",
+        "nome": "Clefable",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,491"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
+        "nome": "Bastiodon",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/426.png",
+        "nome": "Drifblim",
+        "cp": "1,490"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/618.png",
+        "nome": "Stunfisk",
+        "cp": "1,491"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/598.png",
+        "nome": "Ferrothorn",
+        "cp": "1,500"
+      }
+    ]
+  },
+  "mariacabralz": {
+    "competidor": "mariacabralz",
+    "competidor_display": "MariaCabralz",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,497"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
+        "nome": "Meganium",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,476"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
+        "nome": "Toxicroak",
+        "cp": "1,490"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
         "nome": "Marowak (Alolan)",
         "cp": "1,498"
+      }
+    ]
+  },
+  "arielruther": {
+    "competidor": "arielruther",
+    "competidor_display": "ArielRuther",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,500"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/468.png",
-        "nome": "Togekiss",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
+        "nome": "Swampert",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
+        "nome": "Toxicroak",
+        "cp": "1,492"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/596.png",
+        "nome": "Galvantula",
+        "cp": "1,485"
+      }
+    ]
+  },
+  "bibivenditti": {
+    "competidor": "bibivenditti",
+    "competidor_display": "bibivenditti",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
         "cp": "1,499"
       },
       {
@@ -658,44 +302,492 @@
         "cp": "1,497"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
-        "nome": "Umbreon",
-        "cp": "1,500"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/560.png",
+        "nome": "Scrafty",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
+        "nome": "Altaria",
+        "cp": "1,494"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/460.png",
+        "nome": "Abomasnow",
+        "cp": "1,493"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
+        "nome": "Cresselia",
+        "cp": "1,482"
       }
     ]
   },
-  "luucasogrande": {
-    "competidor": "luucasogrande",
+  "rafa1cs": {
+    "competidor": "rafa1cs",
+    "competidor_display": "Rafa1cs",
     "pokemon": [
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
         "nome": "Azumarill",
-        "cp": "1,490"
+        "cp": "1,496"
       },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,492"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
+        "nome": "Toxicroak",
+        "cp": "1,494"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
+        "nome": "Cresselia",
+        "cp": "1,475"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
+        "nome": "Altaria",
+        "cp": "1,497"
+      }
+    ]
+  },
+  "leh29": {
+    "competidor": "leh29",
+    "competidor_display": "leh29",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,491"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/357.png",
+        "nome": "Tropius",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,492"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,494"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/560.png",
+        "nome": "Scrafty",
+        "cp": "1,478"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/151.png",
+        "nome": "Mew",
+        "cp": "1,499"
+      }
+    ]
+  },
+  "lihpelinson": {
+    "competidor": "lihpelinson",
+    "competidor_display": "LihPelinson",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,489"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/288.png",
+        "nome": "Vigoroth",
+        "cp": "1,493"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
+        "nome": "Cresselia",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
+        "cp": "1,498"
+      }
+    ]
+  },
+  "sofiadamae": {
+    "competidor": "sofiadamae",
+    "competidor_display": "Sofiadamae",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/476.png",
+        "nome": "Probopass",
+        "cp": "1,481"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
+        "nome": "Toxicroak",
+        "cp": "1,492"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
+        "nome": "Hypno",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/226.png",
+        "nome": "Mantine",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/254.png",
+        "nome": "Sceptile",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,499"
+      }
+    ]
+  },
+  "cintiaraquelp": {
+    "competidor": "cintiaraquelp",
+    "competidor_display": "Cintiaraquelp",
+    "pokemon": [
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
         "nome": "Umbreon",
         "cp": "1,494"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/460.png",
-        "nome": "Abomasnow",
-        "cp": "1,491"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/71.png",
+        "nome": "Victreebel",
+        "cp": "1,499"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/145.png",
-        "nome": "Zapdos",
-        "cp": "1,496"
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/448.png",
+        "nome": "Lucario",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/97.png",
+        "nome": "Hypno",
+        "cp": "1,493"
       },
       {
         "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
         "nome": "Skarmory",
+        "cp": "1,500"
+      }
+    ]
+  },
+  "camilamidi": {
+    "competidor": "camilamidi",
+    "competidor_display": "Camilamidi",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
+        "nome": "Swampert",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/ninetales-alola.png",
+        "nome": "Ninetales (Alolan)",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
+        "nome": "Cresselia",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/380.png",
+        "nome": "Latias",
+        "cp": "1,494"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/862.png",
+        "nome": "Obstagoon",
+        "cp": "1,476"
+      }
+    ]
+  },
+  "delinha1989": {
+    "competidor": "delinha1989",
+    "competidor_display": "Delinha1989",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/6.png",
+        "nome": "Charizard",
+        "cp": "1,486"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
+        "nome": "Swampert",
+        "cp": "1,487"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/254.png",
+        "nome": "Sceptile",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
+        "nome": "Altaria",
+        "cp": "1,489"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/395.png",
+        "nome": "Empoleon",
+        "cp": "1,481"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/649.png",
+        "nome": "Genesect",
+        "cp": "1,497"
+      }
+    ]
+  },
+  "gabsl08": {
+    "competidor": "gabsl08",
+    "competidor_display": "GabsL08",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
+        "nome": "Meganium",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/210.png",
+        "nome": "Granbull",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/171.png",
+        "nome": "Lanturn",
         "cp": "1,491"
       },
       {
-        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/288.png",
-        "nome": "Vigoroth",
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
+        "cp": "1,474"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/435.png",
+        "nome": "Skuntank",
+        "cp": "1,488"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/488.png",
+        "nome": "Cresselia",
+        "cp": "1,500"
+      }
+    ]
+  },
+  "taisfigueroa": {
+    "competidor": "taisfigueroa",
+    "competidor_display": "TaisFigueroa",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/87.png",
+        "nome": "Dewgong",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/154.png",
+        "nome": "Meganium",
+        "cp": "1,477"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/36.png",
+        "nome": "Clefable",
+        "cp": "1,491"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/marowak-alola.png",
+        "nome": "Marowak (Alolan)",
+        "cp": "1,497"
+      }
+    ]
+  },
+  "pamhferreira": {
+    "competidor": "pamhferreira",
+    "competidor_display": "PamhFerreira",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/3.png",
+        "nome": "Venusaur",
+        "cp": "1,499"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/596.png",
+        "nome": "Galvantula",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/227.png",
+        "nome": "Skarmory",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
+        "nome": "Bastiodon",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/308.png",
+        "nome": "Medicham",
+        "cp": "1,434"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/260.png",
+        "nome": "Swampert",
+        "cp": "1,480"
+      }
+    ]
+  },
+  "mestrekaryne": {
+    "competidor": "mestrekaryne",
+    "competidor_display": "MestreKaryne",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/36.png",
+        "nome": "Clefable",
+        "cp": "1,486"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,494"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/197.png",
+        "nome": "Umbreon",
+        "cp": "1,496"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/334.png",
+        "nome": "Altaria",
+        "cp": "1,500"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
+        "nome": "Bastiodon",
+        "cp": "1,498"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/stunfisk-galar.png",
+        "nome": "Galarian Stunfisk",
         "cp": "1,492"
+      }
+    ]
+  },
+  "myla582": {
+    "competidor": "myla582",
+    "competidor_display": "Myla582",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/454.png",
+        "nome": "Toxicroak",
+        "cp": "1,479"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/411.png",
+        "nome": "Bastiodon",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/497.png",
+        "nome": "Serperior",
+        "cp": "1,489"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/184.png",
+        "nome": "Azumarill",
+        "cp": "1,490"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/40.png",
+        "nome": "Wigglytuff",
+        "cp": "1,477"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/15.png",
+        "nome": "Beedrill",
+        "cp": "1,495"
+      }
+    ]
+  },
+  "pudim8d": {
+    "competidor": "pudim8d",
+    "competidor_display": "Pudim8D",
+    "pokemon": [
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/3.png",
+        "nome": "Venusaur",
+        "cp": "1,490"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/36.png",
+        "nome": "Clefable",
+        "cp": "1,495"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/340.png",
+        "nome": "Whiscash",
+        "cp": "1,482"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/466.png",
+        "nome": "Electivire",
+        "cp": "1,474"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/379.png",
+        "nome": "Registeel",
+        "cp": "1,488"
+      },
+      {
+        "img": "https://thesilphroad.com/img/pokemon/icons/96x96/302.png",
+        "nome": "Sableye",
+        "cp": "1,455"
       }
     ]
   }

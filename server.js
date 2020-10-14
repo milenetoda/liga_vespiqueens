@@ -2,6 +2,7 @@ const faker = require("faker");
 const uid = require("uid");
 const fs = require("fs");
 const lista = require("./lista.js");
+const scraper = require("./scraper.js");
 
 class Server {
   middleware() {
@@ -12,6 +13,9 @@ class Server {
       } else if (this.route(ctx, "POST", "/save")) {
         ctx.response.type = "json";
         ctx.response.body = this.save(ctx.request.body);
+      } else if (this.route(ctx, "GET", "/scrape")){
+        ctx.response.type = "json";
+        ctx.response.body = this.scrape();
       }
       next();
     };
@@ -33,6 +37,11 @@ class Server {
     return JSON.stringify("Salvo e atualizado!");
   }
   
+  scrape(){
+    scraper();
+    var dados = fs.readFileSync("silph.json", "utf-8");
+    return JSON.parse(dados);    
+  }
 }
 
 module.exports = Server;

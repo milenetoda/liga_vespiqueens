@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
@@ -75,8 +74,8 @@
       <div id="header">
         <h1>Admin</h1>
         <button @click="salvar">Gerar</button>
-        <span v-if="resultado == 'ok'">Dados salvos com sucesso.</span>
-        <span v-if="resultado == 'erro'">Erro ao salvar os dados.</span>
+        <button @click="scrape">Scrape</button>
+        <span>{{resultado}}</span>
       </div>
 
       <div id="participantes">
@@ -188,14 +187,18 @@
               <input type="text" v-model="jogo.pontos2" />
               <span class="jogador"
                 >{{find_jogador(jogo.jogador2_id).nome}}</span
-              >              
+              >
             </div>
 
-
-            <div v-if="calcula_resultado(partida) !== '' && calcula_resultado(partida) !== 'Empate!'">
+            <div
+              v-if="calcula_resultado(partida) !== '' && calcula_resultado(partida) !== 'Empate!'"
+            >
               Vencedor: {{calcula_resultado(partida)}}
             </div>
-            <div v-if="calcula_resultado(partida) === 'Empate!'" style="color: red">
+            <div
+              v-if="calcula_resultado(partida) === 'Empate!'"
+              style="color: red"
+            >
               DESEMPATAR
               <select v-model="partida.id_vencedor_do_desempate">
                 <option :value="partida.dupla1_id">
@@ -205,7 +208,6 @@
                   Dupla {{dupla_get_nomes(partida.dupla2_id)}}
                 </option>
               </select>
-              
             </div>
           </div>
         </div>
@@ -252,35 +254,65 @@
           this.set_array(dados.rodadas, this.rodadas);
         },
         methods: {
-
           async salvar() {
             try {
-              
-            
-            var dados = {
-              participantes: this.participantes,
-              duplas: this.duplas,
-              rodadas: this.rodadas,
-            };
-            var response = await fetch("/save", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(dados),
-            });
-            if (response.ok) {
-              this.resultado = "ok";
-            } else this.resultado = "erro";
+              var dados = {
+                participantes: this.participantes,
+                duplas: this.duplas,
+                rodadas: this.rodadas,
+              };
+              var response = await fetch("/save", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dados),
+              });
+              if (response.ok) {
+                this.set_resultado("Dados salvos com sucesso!");
+              } else {
+                this.set_resultado("Erro ao salvar dados");
+              }
+            } catch (error) {
+              this.set_resultado("Erro ao salvar dados");
+              console.error(error);
+            }
+          },
+
+          set_resultado(texto) {
+            this.resultado = texto;
             window.setTimeout(() => {
               this.resultado = "";
             }, 5000);
-          } catch (error) {
-              this.resultado = "erro";
-              console.error(error);
+          },
 
+          async scrape() {
+            if (confirm("Tem certeza?")) {
+              try {
+                var response = await fetch("/scrape");
+
+                var silph = await response.json();
+
+                for (const participante of Object.values(silph)) {
+                  this.participantes.push({
+                    nome: participante.competidor_display,
+                    participante_id: uid(),
+                    comentario: "",
+                  });
+                }
+
+                if (response.ok) {
+                  this.set_resultado("Scrape com sucesso!");
+                } else {
+                  this.set_resultado("Erro ao scrape");
+                }
+              } catch (error) {
+                this.set_resultado("Erro ao scrape");
+                console.error(error);
+              }
             }
           },
+
           set_array(array1, array2) {
             for (const item of array1) {
               array2.push(item);
@@ -293,6 +325,7 @@
               comentario: this.participante.comentario,
             });
           },
+
           remove_participante(participante) {
             this.participantes.splice(
               this.participantes.indexOf(participante),
@@ -395,12 +428,8 @@
             return null;
           },
 
-          find_dupla(dupla_id){
-            return this.find_by_id(
-              this.duplas,
-              "dupla_id",
-              dupla_id
-            )
+          find_dupla(dupla_id) {
+            return this.find_by_id(this.duplas, "dupla_id", dupla_id);
           },
 
           find_jogador(jogador_id) {
@@ -411,14 +440,16 @@
             );
           },
 
-          dupla_get_nomes(dupla_id){
+          dupla_get_nomes(dupla_id) {
             var dupla = this.find_dupla(dupla_id);
-            var nomes = this.find_jogador(dupla.participante1_id).nome + "/" +
-                        this.find_jogador(dupla.participante2_id).nome;
+            var nomes =
+              this.find_jogador(dupla.participante1_id).nome +
+              "/" +
+              this.find_jogador(dupla.participante2_id).nome;
             return nomes;
           },
 
-          calcula_resultado(partida){
+          calcula_resultado(partida) {
             var vitorias_dupla1 = 0;
             var vitorias_dupla2 = 0;
 
@@ -427,48 +458,48 @@
 
             var cont_0x0 = 0;
 
-            for (const jogo of partida.jogos) { 
+            for (const jogo of partida.jogos) {
               var p1 = parseInt(jogo.pontos1);
-              var p2 = parseInt (jogo.pontos2);
-              
-              if (p1 === 0 && p2 ===0 ){
+              var p2 = parseInt(jogo.pontos2);
+
+              if (p1 === 0 && p2 === 0) {
                 cont_0x0++;
 
-                if (cont_0x0 === 4){
+                if (cont_0x0 === 4) {
                   partida.vencedor_id = "";
                   return "";
-                }                
+                }
               }
 
               total_pontos1 += p1;
               total_pontos2 += p2;
 
-              if ( p1 > p2){
+              if (p1 > p2) {
                 vitorias_dupla1++;
-              } else if( p1 < p2){
+              } else if (p1 < p2) {
                 vitorias_dupla2++;
-              } 
+              }
             }
 
-            if (total_pontos1 > total_pontos2){
+            if (total_pontos1 > total_pontos2) {
               partida.vencedor_id = partida.dupla1_id;
-            } else if (total_pontos1 < total_pontos2){
+            } else if (total_pontos1 < total_pontos2) {
               partida.vencedor_id = partida.dupla2_id;
             } else {
-                if (vitorias_dupla1 > vitorias_dupla2) {
-                  partida.vencedor_id = partida.dupla1_id;
-                } else if (vitorias_dupla1 < vitorias_dupla2){
-                  partida.vencedor_id = partida.dupla2_id;
-                } else {
-                    partida.vencedor_id = "Empate!";
-                }
+              if (vitorias_dupla1 > vitorias_dupla2) {
+                partida.vencedor_id = partida.dupla1_id;
+              } else if (vitorias_dupla1 < vitorias_dupla2) {
+                partida.vencedor_id = partida.dupla2_id;
+              } else {
+                partida.vencedor_id = "Empate!";
+              }
             }
 
-            if (partida.vencedor_id === "Empate!"){
-              return "Empate!"
+            if (partida.vencedor_id === "Empate!") {
+              return "Empate!";
             }
             return this.dupla_get_nomes(partida.vencedor_id);
-          }
+          },
         },
       });
     </script>

@@ -1,988 +1,183 @@
 {
   "participantes": [
     {
-      "nome": "Barros",
-      "participante_id": "s7l7xqd3q6h",
-      "comentario": "Carlinhos"
+      "nome": "Gabzis",
+      "participante_id": "gixkervodei",
+      "comentario": "Gabi Gasparotto"
     },
     {
-      "nome": "MileneToda",
-      "participante_id": "ei5y6aaen0h",
-      "comentario": "Milene"
+      "nome": "V1v12n",
+      "participante_id": "n77rc7dwm3u",
+      "comentario": "Vivian"
+    },
+    {
+      "nome": "nathasiaaa",
+      "participante_id": "tpu38rrwugr",
+      "comentario": "Nath"
+    },
+    {
+      "nome": "NaraLago",
+      "participante_id": "w8o6r9yksx9",
+      "comentario": "Nara"
+    },
+    {
+      "nome": "Mahack6",
+      "participante_id": "vco35rovlxt",
+      "comentario": "Marcia"
+    },
+    {
+      "nome": "mileregou",
+      "participante_id": "2hqi4pqsyme",
+      "comentario": "Mirelle"
+    },
+    {
+      "nome": "MariaCabralz",
+      "participante_id": "fey7v0j7nrg",
+      "comentario": "Maria"
     },
     {
       "nome": "ArielRuther",
-      "participante_id": "f5thcqwp2bv",
+      "participante_id": "56c9lc8iq2q",
       "comentario": "Ruth"
     },
     {
-      "nome": "AugustoChrispim",
-      "participante_id": "491ksg64e0j"
+      "nome": "bibivenditti",
+      "participante_id": "1imxnt35lrn",
+      "comentario": "Bibi"
     },
     {
-      "nome": "FerRodrigues18",
-      "participante_id": "1wau802zdkv",
+      "nome": "Rafa1cs",
+      "participante_id": "zg3ewynjptq",
+      "comentario": "Rafaela"
+    },
+    {
+      "nome": "leh29",
+      "participante_id": "uesq8zc1sll",
+      "comentario": "Lety"
+    },
+    {
+      "nome": "LihPelinson",
+      "participante_id": "js6zo148ai9",
+      "comentario": "Olívia"
+    },
+    {
+      "nome": "Sofiadamae",
+      "participante_id": "y58rnmxddp0",
+      "comentario": "Bruna"
+    },
+    {
+      "nome": "Cintiaraquelp",
+      "participante_id": "wpdwudy55kz",
+      "comentario": "Cíntia"
+    },
+    {
+      "nome": "Camilamidi",
+      "participante_id": "z48zcxe7mdp",
       "comentario": ""
     },
     {
-      "nome": "Kobinha23",
-      "participante_id": "zen3ym5wvt0",
-      "comentario": "Marcelo"
+      "nome": "Delinha1989",
+      "participante_id": "5ie0ve6owd1",
+      "comentario": "Andreia"
     },
     {
-      "nome": "Hgp2306",
-      "participante_id": "6mpp7t0ze5c",
+      "nome": "GabsL08",
+      "participante_id": "bxia5pyuvve",
       "comentario": ""
     },
     {
-      "nome": "Dannbarcellos",
-      "participante_id": "r6okmf0sv61",
-      "comentario": ""
+      "nome": "TaisFigueroa",
+      "participante_id": "kcxt89o0e0m",
+      "comentario": "Tais"
     },
     {
-      "nome": "KobaTeruaki",
-      "participante_id": "utvctxgvnul",
-      "comentario": ""
+      "nome": "PamhFerreira",
+      "participante_id": "8uzfi3vcatv",
+      "comentario": "Pâmela"
     },
     {
-      "nome": "GeoFCR7",
-      "participante_id": "tt8ifciaf5j",
-      "comentario": "GF Prestserv"
+      "nome": "MestreKaryne",
+      "participante_id": "5us6ab4zmek",
+      "comentario": "Karyne"
     },
     {
-      "nome": "DaniloCalvalhan",
-      "participante_id": "b2fr8fpt6zo",
-      "comentario": ""
+      "nome": "Myla582",
+      "participante_id": "9swengkwttu",
+      "comentario": "Mylena"
     },
     {
-      "nome": "VegetaSSayajin",
-      "participante_id": "4l227tvrle7",
-      "comentario": "John"
-    },
-    {
-      "nome": "ChelRodrigues",
-      "participante_id": "fwtttrjulut",
-      "comentario": ""
-    },
-    {
-      "nome": "Abmdragond",
-      "participante_id": "4o5n8492b9a",
-      "comentario": "Alex"
-    },
-    {
-      "nome": "Danacrisc",
-      "participante_id": "1y2a76wme9c",
-      "comentario": "Danilo SJC"
-    },
-    {
-      "nome": "Dikilua",
-      "participante_id": "dqf7ea6e227",
-      "comentario": ""
-    },
-    {
-      "nome": "Felipesp3456",
-      "participante_id": "xkuf9ovjrpk",
-      "comentario": ""
-    },
-    {
-      "nome": "MasterPh",
-      "participante_id": "y1ofhcq1unt",
-      "comentario": ""
-    },
-    {
-      "nome": "FeanorEss",
-      "participante_id": "4md1vbsdnmy",
-      "comentario": "Emerson"
-    },
-    {
-      "nome": "LuucasOGrande",
-      "participante_id": "ax508j4j1sw",
-      "comentario": "Lucas Caffarena"
+      "nome": "Pudim8D",
+      "participante_id": "tsq80y0tjmz",
+      "comentario": "Nicoly"
     }
   ],
   "duplas": [
     {
-      "participante1_id": "s7l7xqd3q6h",
-      "participante2_id": "ei5y6aaen0h",
+      "participante1_id": "gixkervodei",
+      "participante2_id": "5us6ab4zmek",
       "nome": "1",
-      "dupla_id": "4apvydjvggy"
+      "dupla_id": "r1buq72a83f"
     },
     {
-      "participante1_id": "f5thcqwp2bv",
-      "participante2_id": "491ksg64e0j",
+      "participante1_id": "zg3ewynjptq",
+      "participante2_id": "n77rc7dwm3u",
       "nome": "2",
-      "dupla_id": "5uxg1hffj0q"
+      "dupla_id": "kzxd5p4envu"
     },
     {
-      "participante1_id": "1wau802zdkv",
-      "participante2_id": "zen3ym5wvt0",
+      "participante1_id": "8uzfi3vcatv",
+      "participante2_id": "fey7v0j7nrg",
       "nome": "3",
-      "dupla_id": "8gywcczcxsf"
+      "dupla_id": "jckljlj3bpo"
     },
     {
-      "participante1_id": "6mpp7t0ze5c",
-      "participante2_id": "r6okmf0sv61",
+      "participante1_id": "vco35rovlxt",
+      "participante2_id": "y58rnmxddp0",
       "nome": "4",
-      "dupla_id": "yjo1eut4tg2"
+      "dupla_id": "vvagjb9ug8k"
     },
     {
-      "participante1_id": "utvctxgvnul",
-      "participante2_id": "tt8ifciaf5j",
+      "participante1_id": "1imxnt35lrn",
+      "participante2_id": "56c9lc8iq2q",
       "nome": "5",
-      "dupla_id": "b09zj675v1r"
+      "dupla_id": "s0ng5jmgdd5"
     },
     {
-      "participante1_id": "b2fr8fpt6zo",
-      "participante2_id": "4l227tvrle7",
+      "participante1_id": "uesq8zc1sll",
+      "participante2_id": "tsq80y0tjmz",
       "nome": "6",
-      "dupla_id": "iv9hmd42z1t"
+      "dupla_id": "xkcrbu9tz37"
     },
     {
-      "participante1_id": "fwtttrjulut",
-      "participante2_id": "4o5n8492b9a",
+      "participante1_id": "5ie0ve6owd1",
+      "participante2_id": "js6zo148ai9",
       "nome": "7",
-      "dupla_id": "x3e9wk13tf6"
+      "dupla_id": "bxsszpl4dl6"
     },
     {
-      "participante1_id": "1y2a76wme9c",
-      "participante2_id": "dqf7ea6e227",
+      "participante1_id": "kcxt89o0e0m",
+      "participante2_id": "9swengkwttu",
       "nome": "8",
-      "dupla_id": "1knhfq3502f"
+      "dupla_id": "jxizvp69dtp"
     },
     {
-      "participante1_id": "xkuf9ovjrpk",
-      "participante2_id": "y1ofhcq1unt",
+      "participante1_id": "wpdwudy55kz",
+      "participante2_id": "z48zcxe7mdp",
       "nome": "9",
-      "dupla_id": "yna9w5d1s10"
+      "dupla_id": "zfd1ekncd35"
     },
     {
-      "participante1_id": "4md1vbsdnmy",
-      "participante2_id": "ax508j4j1sw",
+      "participante1_id": "2hqi4pqsyme",
+      "participante2_id": "bxia5pyuvve",
       "nome": "10",
-      "dupla_id": "0y36pc20g0a"
+      "dupla_id": "64pizymttp5"
+    },
+    {
+      "participante1_id": "tpu38rrwugr",
+      "participante2_id": "w8o6r9yksx9",
+      "nome": "11",
+      "dupla_id": "fkcyoz9fb2c"
     }
   ],
-  "rodadas": [
-    {
-      "partidas": [
-        {
-          "dupla1_id": "8gywcczcxsf",
-          "dupla2_id": "4apvydjvggy",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "8gywcczcxsf"
-        },
-        {
-          "dupla1_id": "iv9hmd42z1t",
-          "dupla2_id": "0y36pc20g0a",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "b2fr8fpt6zo",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "b2fr8fpt6zo",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "4l227tvrle7",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "4l227tvrle7",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": "3",
-              "pontos2": "0"
-            }
-          ],
-          "vencedor_id": "iv9hmd42z1t"
-        },
-        {
-          "dupla1_id": "x3e9wk13tf6",
-          "dupla2_id": "b09zj675v1r",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "fwtttrjulut",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "fwtttrjulut",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "4o5n8492b9a",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "4o5n8492b9a",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "3",
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": "x3e9wk13tf6"
-        },
-        {
-          "dupla1_id": "1knhfq3502f",
-          "dupla2_id": "yjo1eut4tg2",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "6mpp7t0ze5c",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "r6okmf0sv61",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "6mpp7t0ze5c",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "r6okmf0sv61",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "1knhfq3502f"
-        },
-        {
-          "dupla1_id": "yna9w5d1s10",
-          "dupla2_id": "5uxg1hffj0q",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "f5thcqwp2bv",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "491ksg64e0j",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "f5thcqwp2bv",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "491ksg64e0j",
-              "pontos1": "1",
-              "pontos2": "2"
-            }
-          ],
-          "vencedor_id": "yna9w5d1s10"
-        }
-      ]
-    },
-    {
-      "partidas": [
-        {
-          "dupla1_id": "4apvydjvggy",
-          "dupla2_id": "yna9w5d1s10",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "s7l7xqd3q6h",
-              "jogador2_id": "xkuf9ovjrpk",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "s7l7xqd3q6h",
-              "jogador2_id": "y1ofhcq1unt",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "ei5y6aaen0h",
-              "jogador2_id": "xkuf9ovjrpk",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "ei5y6aaen0h",
-              "jogador2_id": "y1ofhcq1unt",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "yna9w5d1s10"
-        },
-        {
-          "dupla1_id": "5uxg1hffj0q",
-          "dupla2_id": "iv9hmd42z1t",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": 0,
-              "pontos2": "3"
-            }
-          ],
-          "vencedor_id": "iv9hmd42z1t"
-        },
-        {
-          "dupla1_id": "yjo1eut4tg2",
-          "dupla2_id": "8gywcczcxsf",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "1wau802zdkv",
-              "pontos1": "3",
-              "pontos2": "0"
-            },
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "zen3ym5wvt0",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "1wau802zdkv",
-              "pontos1": "0",
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "zen3ym5wvt0",
-              "pontos1": 0,
-              "pontos2": "3"
-            }
-          ],
-          "vencedor_id": "Empate!",
-          "id_vencedor_do_desempate": "yjo1eut4tg2"
-        },
-        {
-          "dupla1_id": "1knhfq3502f",
-          "dupla2_id": "x3e9wk13tf6",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": "1",
-              "pontos2": "2"
-            }
-          ],
-          "vencedor_id": "x3e9wk13tf6"
-        },
-        {
-          "dupla1_id": "0y36pc20g0a",
-          "dupla2_id": "b09zj675v1r",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "4md1vbsdnmy",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "4md1vbsdnmy",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "ax508j4j1sw",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "ax508j4j1sw",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "3",
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": "0y36pc20g0a"
-        }
-      ]
-    },
-    {
-      "partidas": [
-        {
-          "dupla1_id": "4apvydjvggy",
-          "dupla2_id": "b09zj675v1r",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "s7l7xqd3q6h",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "s7l7xqd3q6h",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "ei5y6aaen0h",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "ei5y6aaen0h",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "1",
-              "pontos2": "2"
-            }
-          ],
-          "vencedor_id": "b09zj675v1r"
-        },
-        {
-          "dupla1_id": "5uxg1hffj0q",
-          "dupla2_id": "0y36pc20g0a",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
-              "pontos2": "3"
-            }
-          ],
-          "vencedor_id": "0y36pc20g0a"
-        },
-        {
-          "dupla1_id": "8gywcczcxsf",
-          "dupla2_id": "x3e9wk13tf6",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": "0",
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "x3e9wk13tf6"
-        },
-        {
-          "dupla1_id": "yjo1eut4tg2",
-          "dupla2_id": "iv9hmd42z1t",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "Empate!"
-        },
-        {
-          "dupla1_id": "1knhfq3502f",
-          "dupla2_id": "yna9w5d1s10",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "xkuf9ovjrpk",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "y1ofhcq1unt",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "xkuf9ovjrpk",
-              "pontos1": "1",
-              "pontos2": "2"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "y1ofhcq1unt",
-              "pontos1": "2",
-              "pontos2": "1"
-            }
-          ],
-          "vencedor_id": "1knhfq3502f"
-        }
-      ]
-    },
-    {
-      "partidas": [
-        {
-          "dupla1_id": "5uxg1hffj0q",
-          "dupla2_id": "4apvydjvggy",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "f5thcqwp2bv",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "491ksg64e0j",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": 0,
-              "pontos2": "3"
-            }
-          ],
-          "vencedor_id": "5uxg1hffj0q"
-        },
-        {
-          "dupla1_id": "8gywcczcxsf",
-          "dupla2_id": "iv9hmd42z1t",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": "3",
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": "8gywcczcxsf"
-        },
-        {
-          "dupla1_id": "yjo1eut4tg2",
-          "dupla2_id": "0y36pc20g0a",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": "3",
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": "yjo1eut4tg2"
-        },
-        {
-          "dupla1_id": "1knhfq3502f",
-          "dupla2_id": "b09zj675v1r",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": "2",
-              "pontos2": "1"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": "3"
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": 0,
-              "pontos2": "3"
-            }
-          ],
-          "vencedor_id": "b09zj675v1r"
-        },
-        {
-          "dupla1_id": "yna9w5d1s10",
-          "dupla2_id": "x3e9wk13tf6",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "fwtttrjulut",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "4o5n8492b9a",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        }
-      ]
-    },
-    {
-      "partidas": [
-        {
-          "dupla1_id": "8gywcczcxsf",
-          "dupla2_id": "0y36pc20g0a",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "1wau802zdkv",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "4md1vbsdnmy",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "zen3ym5wvt0",
-              "jogador2_id": "ax508j4j1sw",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        },
-        {
-          "dupla1_id": "yjo1eut4tg2",
-          "dupla2_id": "4apvydjvggy",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "6mpp7t0ze5c",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "s7l7xqd3q6h",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "r6okmf0sv61",
-              "jogador2_id": "ei5y6aaen0h",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        },
-        {
-          "dupla1_id": "x3e9wk13tf6",
-          "dupla2_id": "iv9hmd42z1t",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "fwtttrjulut",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "fwtttrjulut",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "4o5n8492b9a",
-              "jogador2_id": "b2fr8fpt6zo",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "4o5n8492b9a",
-              "jogador2_id": "4l227tvrle7",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        },
-        {
-          "dupla1_id": "1knhfq3502f",
-          "dupla2_id": "5uxg1hffj0q",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "f5thcqwp2bv",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "1y2a76wme9c",
-              "jogador2_id": "491ksg64e0j",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "f5thcqwp2bv",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "dqf7ea6e227",
-              "jogador2_id": "491ksg64e0j",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        },
-        {
-          "dupla1_id": "yna9w5d1s10",
-          "dupla2_id": "b09zj675v1r",
-          "partida_id": "",
-          "jogos": [
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "xkuf9ovjrpk",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "utvctxgvnul",
-              "pontos1": 0,
-              "pontos2": 0
-            },
-            {
-              "jogador1_id": "y1ofhcq1unt",
-              "jogador2_id": "tt8ifciaf5j",
-              "pontos1": 0,
-              "pontos2": 0
-            }
-          ],
-          "vencedor_id": ""
-        }
-      ]
-    }
-  ]
+  "rodadas": []
 }
