@@ -190,35 +190,47 @@ function rodadas(dados, rodada, rodada_indice) {
   write(`<h2>Rodada ${rodada_indice}</h2>`);
   for (var partida of rodada.partidas) {
     i++;
-    var dupla1  = busca_dupla_por_nome(dados, partida[0]);
-    var dupla2  = busca_dupla_por_nome(dados, partida[1]);
+    var dupla1 = busca_dupla_por_nome(dados, partida.dupla1_participante);
+    var dupla2 = busca_dupla_por_nome(dados, partida.dupla2_participante);
 
-    if(dupla1){
+    if (dupla1) {
       dupla1.num = dupla1.nome;
       dupla1.nome1 = busca_participante(dados, dupla1.participante1_id).nome;
       dupla1.nome2 = busca_participante(dados, dupla1.participante2_id).nome;
       dupla1.sep = "<br>";
+      dupla1.resultado =
+        partida.vencedor === ""
+          ? ""
+          : partida.vencedor === partida.dupla1_participante
+          ? "win"
+          : "loss";
     } else {
       dupla1 = {};
       dupla1.num = "";
       dupla1.nome1 = "W.O.";
       dupla1.nome2 = "";
-      dupla1.sep= "";
-    } 
-    if (dupla2){
+      dupla1.sep = "";
+      dupla1.resultado = "";
+    }
+    if (dupla2) {
       dupla2.num = dupla2.nome;
       dupla2.nome1 = busca_participante(dados, dupla2.participante1_id).nome;
       dupla2.nome2 = busca_participante(dados, dupla2.participante2_id).nome;
       dupla2.sep = "<br>";
+      dupla2.resultado =
+        partida.vencedor === ""
+          ? ""
+          : partida.vencedor === partida.dupla2_participante
+          ? "win"
+          : "loss";
     } else {
       dupla2 = {};
       dupla2.num = "";
       dupla2.nome1 = "W.O.";
       dupla2.nome2 = "";
-      dupla2.sep= "";
-    } 
-
-    
+      dupla2.sep = "";
+      dupla2.resultado = "";
+    }
 
     write(`
       <div class="partida bloco" data-d1="${dupla1.num}" data-d2="${dupla2.num}">
@@ -226,12 +238,12 @@ function rodadas(dados, rodada, rodada_indice) {
           <h3>#${i}</h3>
         </div>        
         <div class="partida-jogo">
-          <span class="jogador-nome">${dupla1.nome1}${dupla1.sep}${dupla1.nome2}</span>              
+          <span class="jogador-nome ${dupla1.resultado}">${dupla1.nome1}${dupla1.sep}${dupla1.nome2}</span>              
           <div class="jogador-vs">X</div>              
-          <span class="jogador-nome">${dupla2.nome1}${dupla2.sep}${dupla2.nome2}</span>
+          <span class="jogador-nome ${dupla2.resultado}">${dupla2.nome1}${dupla2.sep}${dupla2.nome2}</span>
         </div>        
       </div>
-      `);
+    `);
 
     //<ol class="bloco_itens resultados_partidas">
     // var resultado = {
@@ -314,12 +326,11 @@ function busca_dupla(dados, id) {
 }
 
 function busca_dupla_por_nome(dados, nome) {
-
   if (nome === "-bye-") return null;
 
   for (const participante of dados.participantes) {
     if (participante.nome.toLowerCase() === nome) {
-      for (const dupla of dados.duplas) {        
+      for (const dupla of dados.duplas) {
         var id = participante.participante_id;
         if (id === dupla.participante1_id || id === dupla.participante2_id) {
           return dupla;
@@ -327,7 +338,7 @@ function busca_dupla_por_nome(dados, nome) {
       }
     }
   }
-  
+
   throw new Error("Erro ao buscar dupla: " + nome);
 }
 

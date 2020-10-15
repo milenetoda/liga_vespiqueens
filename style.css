@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Hannover-Messe-Sans';
-  src:url('fonts/Hannover-Messe-Sans.ttf.woff') format('woff'),
-      url('fonts/Hannover-Messe-Sans.ttf.svg#Hannover-Messe-Sans') format('svg'),
-      url('fonts/Hannover-Messe-Sans.ttf.eot'),
-      url('fonts/Hannover-Messe-Sans.ttf.eot?#iefix') format('embedded-opentype'); 
-      font-weight: normal;
-      font-style: normal;
+  font-family: "Hannover-Messe-Sans";
+  src: url("fonts/Hannover-Messe-Sans.ttf.woff") format("woff"),
+    url("fonts/Hannover-Messe-Sans.ttf.svg#Hannover-Messe-Sans") format("svg"),
+    url("fonts/Hannover-Messe-Sans.ttf.eot"),
+    url("fonts/Hannover-Messe-Sans.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -75,11 +75,11 @@ h2 {
   border-radius: 5px;
 }
 
-.banner{
+.banner {
   background-color: #faa41a;
   color: #fff;
   text-align: center;
-  font-family: 'Hannover-Messe-Sans';
+  font-family: "Hannover-Messe-Sans";
   text-shadow: 1px 1px 2px #3f3f3f;
   letter-spacing: 2px;
   padding: 5px 0 5px 0;
@@ -87,33 +87,35 @@ h2 {
   text-transform: uppercase;
 }
 
-.banner h2{
+.banner h2 {
   background: inherit;
   color: inherit;
   font-size: 2rem;
   margin: 0;
 }
 
-.banner h3{
+.banner h3 {
   font-size: 1.6rem;
   margin: 0;
 }
 
-.svg_home{
+.svg_home {
   display: block;
   height: 31px;
   width: 31px;
   margin: 2px 0;
 }
 
-#menu a , #rodadas_menu a, .svg_home{
+#menu a,
+#rodadas_menu a,
+.svg_home {
   color: #ccc;
   fill: #ccc;
   font-size: 1.6rem;
   font-weight: 900;
 }
 
-#rodadas_menu a{
+#rodadas_menu a {
   text-decoration: none;
   text-align: center;
   display: block;
@@ -123,20 +125,21 @@ h2 {
   color: #eee;
 }
 
-
-#menu a:hover , #rodadas_menu a:hover , .svg_home:hover{
+#menu a:hover,
+#rodadas_menu a:hover,
+.svg_home:hover {
   color: rgb(157, 219, 100);
   fill: rgb(157, 219, 100);
 }
 
-#menu a{
+#menu a {
   font-size: 1.4rem;
 }
 
-@media (min-width: 396px){
-  #menu a{
+@media (min-width: 396px) {
+  #menu a {
     font-size: 1.6rem;
-  } 
+  }
 }
 
 #menu {
@@ -145,7 +148,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-#menu .selected , #rodadas_menu .selected , #menu .selected .svg_home{
+#menu .selected,
+#rodadas_menu .selected,
+#menu .selected .svg_home {
   color: rgb(240, 184, 29);
   fill: rgb(240, 184, 29);
 }
@@ -155,17 +160,53 @@ h2 {
   min-width: 100%;
 }
 
-@media (min-width: 480px){
+@media (min-width: 480px) {
   .partida {
     min-width: 48%;
-  } 
+  }
 }
 
-.partida-jogo{
+.partida-jogo {
   width: 100%;
   text-align: center;
   background: hsl(0, 0%, 80%);
   border-radius: 5px;
+  overflow: hidden;
+  color: rgb(246, 245, 242);
+  text-shadow: 0 0 3px #2d2d2d;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partida-jogo .jogador-vs {
+  display: none;
+}
+
+.partida-jogo .jogador-nome {
+  display: block;
+  padding: 5px;
+  height: 50%;
+  box-sizing: border-box;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partida-jogo :nth-child(1) {
+  background: #888;
+}
+
+.partida-jogo :nth-child(3) {
+  background: #666;
+}
+
+.partida-jogo .win {
+  background: #5cb85c;
+}
+
+.partida-jogo .loss {
+  background: #a72825;
 }
 
 .bloco_itens {
@@ -193,7 +234,7 @@ h2 {
   justify-content: space-around;
 }
 
-#rodadas h2{
+#rodadas h2 {
   min-width: 100%;
 }
 
@@ -232,20 +273,21 @@ h2 {
   list-style: none;
 }
 
-.bloco_itens li:nth-child(5) , .dupla li:nth-child(1),  .dupla li:nth-child(3){
+.bloco_itens li:nth-child(5),
+.dupla li:nth-child(1),
+.dupla li:nth-child(3) {
   color: hsl(0, 0%, 80%);
   background-color: hsl(0, 0%, 10%);
 }
 
-.bloco_itens li{
+.bloco_itens li {
   color: hsl(0, 0%, 10%);
   background-color: hsl(0, 0%, 80%);
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
-
 
 .pokemon_list {
   display: flex;
@@ -311,26 +353,22 @@ h2 {
   display: static;
 }
 
-.resultados_partidas li{
+.resultados_partidas li {
   padding-left: 0;
 }
 
-.resultados_partidas li.vencedor_partida{
+.resultados_partidas li.vencedor_partida {
   text-align: center;
 }
 
-.jogo .resultado1-left , 
-.jogo .resultado1-right
-.jogo .resultado2{
+.jogo .resultado1-left,
+.jogo .resultado1-right .jogo .resultado2 {
   display: inline-block;
-  
 }
 
 .jogo .resultado1-right {
   display: none;
 }
-
-
 
 .jogo .jogador-vs {
   display: none;
@@ -343,9 +381,8 @@ h2 {
   padding: 0 10px;
 }
 .jogo .jogador1 {
-  background-color: hsl(0, 0%, 69%);  
+  background-color: hsl(0, 0%, 69%);
 }
-
 
 .jogo input {
   width: 30px;
@@ -355,7 +392,8 @@ h2 {
   height: 22px;
 }
 
-.jogo input, .jogo .jogador1{
+.jogo input,
+.jogo .jogador1 {
   padding-bottom: 2px;
 }
 
@@ -384,7 +422,8 @@ h2 {
   .jogo .jogador-vs {
     display: block;
   }
-  .jogo input, .jogo .jogador1{
+  .jogo input,
+  .jogo .jogador1 {
     padding-bottom: 0;
   }
 }
