@@ -6,7 +6,7 @@
   "author": "milenetoda <milene.toda@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./node_modules/local-web-server/bin/cli.js --stack body-parser static server"
+    "start": "nodemon node_modules/local-web-server/bin/cli --stack static body-parser server"
   },
   "dependencies": {
     "faker": "^5.1.0",
@@ -14,5 +14,11 @@
     "nodemon": "^2.0.4",
     "uid": "^1.0.0",
     "x-ray": "^2.3.4"
+  },
+
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
   }
 }

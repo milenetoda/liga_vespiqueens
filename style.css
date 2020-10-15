@@ -120,6 +120,12 @@ h2 {
   cursor: pointer;
 }
 
+.partida-jogo{
+  width: 100%;
+  text-align: center;
+  background: hsl(0, 0%, 80%);
+  border-radius: 5px;
+}
 
 .bloco_itens {
   list-style-position: inside;
@@ -287,7 +293,12 @@ h2 {
 .jogo .jogador2 {
   display: flex;
   align-items: center;
+  padding: 0 10px;
 }
+.jogo .jogador1 {
+  background-color: hsl(0, 0%, 69%);  
+}
+
 
 .jogo input {
   width: 30px;

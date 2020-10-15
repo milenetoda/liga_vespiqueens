@@ -6,18 +6,19 @@ const scraper = require("./scraper.js");
 
 class Server {
   middleware() {
-    return (ctx, next) => {
+    return async (ctx, next) => {
+
       if (this.route(ctx, "GET", "/load")) {
         ctx.response.type = "json";
         ctx.response.body = this.load();
       } else if (this.route(ctx, "POST", "/save")) {
         ctx.response.type = "json";
-        ctx.response.body = this.save(ctx.request.body);
+        ctx.response.body = await this.save(ctx.request.body);
       } else if (this.route(ctx, "GET", "/scrape")){
         ctx.response.type = "json";
-        ctx.response.body = this.scrape();
+        ctx.response.body = await this.scrape();
       }
-      next();
+      await next();
     };
   }
 
@@ -30,18 +31,18 @@ class Server {
     return JSON.parse(dados);
   }
 
-  save(data) {
+  async save(data) {
     fs.writeFileSync("dados.json", JSON.stringify(data, null, 2), "utf-8");
-    lista.executar();
-
+    await lista();
     return JSON.stringify("Salvo e atualizado!");
   }
-  
-  scrape(){
-    scraper();
+
+  async scrape() {
+    await scraper();
     var dados = fs.readFileSync("silph.json", "utf-8");
-    return JSON.parse(dados);    
+    return JSON.parse(dados);
   }
+
 }
 
 module.exports = Server;

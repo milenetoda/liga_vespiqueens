@@ -1,53 +1,52 @@
 const fs = require("fs");
-
+const scrape_rodadas = require("./scraper_rodadas.js");
 var output = "";
 
-//main();
-
-function main() {
+module.exports = async function (rodadas_lista) {
   const dados = require("./dados.json");
-  var silph = require("./silph.json");  
+  var silph = require("./silph.json");
+
   output = "";
   duplas(dados, silph);
   cria_pagina("index", "duplas");
-  
+
   output = "";
-  
-  for (let i=1; i<=dados.rodadas.length; i++) {    
+
+  var rodadas_lista = await scrape_rodadas();
+  for (let i = 1; i <= rodadas_lista.length; i++) {
     write("<div>");
-    write("<a href='rodada_"+ i +".html'>Rodada #"+ i +"</a>");
+    write("<a href='rodada_" + i + ".html'>Rodada #" + i + "</a>");
     write("</div>");
   }
   cria_pagina("rodadas_menu");
 
-  var i=0;
-  for (const rodada of dados.rodadas) {
+  var i = 0;
+  for (const rodada of rodadas_lista) {
     i++;
     output = "";
     rodadas(dados, rodada, i);
     cria_pagina("rodada_" + i, "rodadas");
   }
-  
-  output = "";
-  tabela(dados);
-  cria_pagina("tabela");
 
-  output = "";
-  //cria_pagina("index");
+  // output = "";
+  // tabela(dados);
+  // cria_pagina("tabela");
 
-}
+  // output = "";
+  // //cria_pagina("index");
+};
 
-function cria_pagina(pagina, template){
+function cria_pagina(pagina, template) {
   if (!template) template = pagina;
-    var input = fs.readFileSync(template + "_template.html", "utf-8");
-    var menu = fs.readFileSync("menu_template.html", "utf-8");
-    
-    menu = menu.replace('data-' + template, 'class="selected"');
+  var input = fs.readFileSync(template + "_template.html", "utf-8");
+  var menu = fs.readFileSync("menu_template.html", "utf-8");
 
-    var final = input.replace("#" + template + "#", output)
-                .replace("#menu#", menu);
-    fs.writeFileSync(pagina + ".html", final, "utf-8");  
-    
+  menu = menu.replace("data-" + template, 'class="selected"');
+
+  var final = input
+    .replace("#" + template + "#", output)
+    .replace("#menu#", menu);
+  fs.writeFileSync(pagina + ".html", final, "utf-8");
 }
 
 function duplas(dados, silph) {
@@ -74,8 +73,6 @@ function duplas(dados, silph) {
     write(`</div>`);
   }
 }
-
-
 
 function lista_pokemon(pokemon) {
   write(`<div class="pokemon_list">`);
@@ -109,7 +106,7 @@ function fixname(name) {
   return name;
 }
 
-function tabela(dados){
+function tabela(dados) {
   write(`
   <div id="legenda">#: Ranking | D: Dupla | P: Pontos | V: Vitórias</div>
 <table>
@@ -139,16 +136,15 @@ function tabela(dados){
     </tr>
     `);
 
-    i++
+    i++;
   }
-  
+
   write(`
   </tbody>
   </table>`);
-
 }
 
-function gera_classificacao(dados){
+function gera_classificacao(dados) {
   var classificacao = {};
 
   for (const dupla of dados.duplas) {
@@ -157,114 +153,142 @@ function gera_classificacao(dados){
       dupla_id: dupla.dupla_id,
       pontos: 0,
       vitorias: 0,
-    }
+    };
   }
 
   for (const rodada of dados.rodadas) {
     for (const partida of rodada.partidas) {
-        var d1 = classificacao[partida.dupla1_id];
-        var d2 = classificacao[partida.dupla2_id];
+      var d1 = classificacao[partida.dupla1_id];
+      var d2 = classificacao[partida.dupla2_id];
       for (const jogo of partida.jogos) {
         d1.pontos += parseInt(jogo.pontos1);
         d2.pontos += parseInt(jogo.pontos2);
       }
-      if (partida.vencedor_id && partida.vencedor_id !== 'Empate!'){
+      if (partida.vencedor_id && partida.vencedor_id !== "Empate!") {
         classificacao[partida.vencedor_id].vitorias++;
       }
     }
   }
 
-  var lista = Object.values(classificacao); 
+  var lista = Object.values(classificacao);
 
-  lista.sort(function(linha1, linha2){
-    var criterio1 = linha2.pontos-linha1.pontos;
-    if (criterio1 != 0){
+  lista.sort(function (linha1, linha2) {
+    var criterio1 = linha2.pontos - linha1.pontos;
+    if (criterio1 != 0) {
       return criterio1;
     }
-    var criterio2 = linha2.vitorias-linha1.vitorias;
-      return criterio2;
+    var criterio2 = linha2.vitorias - linha1.vitorias;
+    return criterio2;
+  });
 
-  })
-
-
-  
   return lista;
 }
 
 function rodadas(dados, rodada, rodada_indice) {
-    var i = 0;
+  var i = 0;
 
-    write(`<h2>Rodada ${rodada_indice}</h2>`);
-    for (var partida of rodada.partidas) {
-      i++;
-      var dupla1_num = busca_dupla(dados, partida.dupla1_id).nome;
-      var dupla2_num = busca_dupla(dados, partida.dupla2_id).nome;
+  write(`<h2>Rodada ${rodada_indice}</h2>`);
+  for (var partida of rodada.partidas) {
+    i++;
+    var dupla1  = busca_dupla_por_nome(dados, partida[0]);
+    var dupla2  = busca_dupla_por_nome(dados, partida[1]);
 
-      write(`
-      <div class="partida bloco" data-d1="${dupla1_num}" data-d2="${dupla2_num}">
+    if(dupla1){
+      dupla1.num = dupla1.nome;
+      dupla1.nome1 = busca_participante(dados, dupla1.participante1_id).nome;
+      dupla1.nome2 = busca_participante(dados, dupla1.participante2_id).nome;
+      dupla1.sep = "<br>";
+    } else {
+      dupla1 = {};
+      dupla1.num = "";
+      dupla1.nome1 = "W.O.";
+      dupla1.nome2 = "";
+      dupla1.sep= "";
+    } 
+    if (dupla2){
+      dupla2.num = dupla2.nome;
+      dupla2.nome1 = busca_participante(dados, dupla2.participante1_id).nome;
+      dupla2.nome2 = busca_participante(dados, dupla2.participante2_id).nome;
+      dupla2.sep = "<br>";
+    } else {
+      dupla2 = {};
+      dupla2.num = "";
+      dupla2.nome1 = "W.O.";
+      dupla2.nome2 = "";
+      dupla2.sep= "";
+    } 
+
+    
+
+    write(`
+      <div class="partida bloco" data-d1="${dupla1.num}" data-d2="${dupla2.num}">
         <div class="bloco_numero">
-          <h3>Partida #${i}</h3>
-        </div>
-
-        <ol class="bloco_itens resultados_partidas">
-      `)
-      var resultado = {
-        dupla1 : "",
-        pontos1 : 0,
-        dupla2 : "",
-        pontos2 : 0,
-      };
-      var contador = 0;
-      for (const jogo of partida.jogos) {
-        var nome1 = busca_participante(dados, jogo.jogador1_id).nome;
-        var nome2 = busca_participante(dados, jogo.jogador2_id).nome;
-        write(`<li>`)
-        criaJogo(nome1, jogo.pontos1, nome2, jogo.pontos2);
-        write(`</li>`)
-        if( contador === 0){
-          resultado.dupla1 += nome1;
-          resultado.dupla2 += nome2;
-        }
-        if (contador === 1){
-          resultado.dupla2 += "<br/>" + nome2;
-        }
-        if (contador === 2){
-          resultado.dupla1 += "<br/>" + nome1;
-        }
-        contador++;
-
-        resultado.pontos1 += parseInt(jogo.pontos1);
-        resultado.pontos2 += parseInt(jogo.pontos2);
-      }
-      write(`<li>`)
-      criaJogo(resultado.dupla1, resultado.pontos1, resultado.dupla2, resultado.pontos2);
-      write(`</li>`)
-      
-      if (partida.vencedor_id){
-        write(`<li class="vencedor_partida" >`)
-        if (partida.vencedor_id !== 'Empate!'){
-          write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
-        }
-        else {
-          if (partida.id_vencedor_do_desempate){
-            write ("Vencedor: " + dupla_get_nomes(dados, partida.id_vencedor_do_desempate) + " (Vencido no desempate)");
-          } else {
-            write ("FAZER PARTIDA EXTRA");
-          }          
-        }
-        write(`</li>`)
-      }
-            
-      
-      write(`
-        </ol>
+          <h3>#${i}</h3>
+        </div>        
+        <div class="partida-jogo">
+          <span class="jogador-nome">${dupla1.nome1}${dupla1.sep}${dupla1.nome2}</span>              
+          <div class="jogador-vs">X</div>              
+          <span class="jogador-nome">${dupla2.nome1}${dupla2.sep}${dupla2.nome2}</span>
+        </div>        
       </div>
-          `);      
-    }
-  
+      `);
+
+    //<ol class="bloco_itens resultados_partidas">
+    // var resultado = {
+    //   dupla1 : "",
+    //   pontos1 : 0,
+    //   dupla2 : "",
+    //   pontos2 : 0,
+    // };
+    // var contador = 0;
+    // for (const jogo of partida.jogos) {
+    //   var nome1 = busca_participante(dados, jogo.jogador1_id).nome;
+    //   var nome2 = busca_participante(dados, jogo.jogador2_id).nome;
+    //   write(`<li>`)
+    //   criaJogo(nome1, jogo.pontos1, nome2, jogo.pontos2);
+    //   write(`</li>`)
+    //   if( contador === 0){
+    //     resultado.dupla1 += nome1;
+    //     resultado.dupla2 += nome2;
+    //   }
+    //   if (contador === 1){
+    //     resultado.dupla2 += "<br/>" + nome2;
+    //   }
+    //   if (contador === 2){
+    //     resultado.dupla1 += "<br/>" + nome1;
+    //   }
+    //   contador++;
+
+    //   resultado.pontos1 += parseInt(jogo.pontos1);
+    //   resultado.pontos2 += parseInt(jogo.pontos2);
+    // }
+    // write(`<li>`)
+    // criaJogo(resultado.dupla1, resultado.pontos1, resultado.dupla2, resultado.pontos2);
+    // write(`</li>`)
+
+    // if (partida.vencedor_id){
+    //   write(`<li class="vencedor_partida" >`)
+    //   if (partida.vencedor_id !== 'Empate!'){
+    //     write ("Vencedor: " + dupla_get_nomes(dados, partida.vencedor_id));
+    //   }
+    //   else {
+    //     if (partida.id_vencedor_do_desempate){
+    //       write ("Vencedor: " + dupla_get_nomes(dados, partida.id_vencedor_do_desempate) + " (Vencido no desempate)");
+    //     } else {
+    //       write ("FAZER PARTIDA EXTRA");
+    //     }
+    //   }
+    //   write(`</li>`)
+    // }
+
+    // write(`
+    //   </ol>
+    // </div>
+    //     `);
+  }
 }
 
-function criaJogo(nome1, pontos1, nome2, pontos2){
+function criaJogo(nome1, pontos1, nome2, pontos2) {
   write(`
   <div class="jogo">
     <div class="jogador1">
@@ -278,28 +302,41 @@ function criaJogo(nome1, pontos1, nome2, pontos2){
       <span class="jogador-nome">${nome2}</span>
     </div>
   </div>
-  `)
-
+  `);
 }
 
-function busca_participante (dados, id){
-  return find_by_id(
-    dados.participantes,
-    "participante_id",
-    id)
+function busca_participante(dados, id) {
+  return find_by_id(dados.participantes, "participante_id", id);
 }
 
 function busca_dupla(dados, id) {
-  return find_by_id(
-    dados.duplas,
-    "dupla_id",
-    id)
+  return find_by_id(dados.duplas, "dupla_id", id);
 }
 
-function dupla_get_nomes(dados, dupla_id){
+function busca_dupla_por_nome(dados, nome) {
+
+  if (nome === "-bye-") return null;
+
+  for (const participante of dados.participantes) {
+    if (participante.nome.toLowerCase() === nome) {
+      for (const dupla of dados.duplas) {        
+        var id = participante.participante_id;
+        if (id === dupla.participante1_id || id === dupla.participante2_id) {
+          return dupla;
+        }
+      }
+    }
+  }
+  
+  throw new Error("Erro ao buscar dupla: " + nome);
+}
+
+function dupla_get_nomes(dados, dupla_id) {
   var dupla = busca_dupla(dados, dupla_id);
-  var nomes = busca_participante(dados, dupla.participante1_id).nome + " / " +
-              busca_participante(dados, dupla.participante2_id).nome;
+  var nomes =
+    busca_participante(dados, dupla.participante1_id).nome +
+    " / " +
+    busca_participante(dados, dupla.participante2_id).nome;
   return nomes;
 }
 
@@ -313,8 +350,4 @@ function find_by_id(array, nome_id, valor_id) {
 function write(a) {
   //console.log(a);
   output += a + "\r\n";
-}
-
-module.exports = {
-  executar: main
 }
