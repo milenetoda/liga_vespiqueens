@@ -152,6 +152,13 @@ h2 {
 
 .partida {
   cursor: pointer;
+  min-width: 100%;
+}
+
+@media (min-width: 480px){
+  .partida {
+    min-width: 48%;
+  } 
 }
 
 .partida-jogo{
@@ -181,7 +188,13 @@ h2 {
 }
 
 #rodadas {
-  --display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#rodadas h2{
+  min-width: 100%;
 }
 
 .bloco {
