@@ -73,7 +73,7 @@
     <div id="app" v-cloak>
       <div id="header">
         <h1>Admin</h1>
-        <button @click="salvar">Gerar</button>
+        <button @click="salvar">Atualizar Rodadas</button>
         <button @click="scrape">Scrape</button>
         <span>{{resultado}}</span>
       </div>
@@ -150,11 +150,11 @@
         </div>
       </div>
 
-      <h2>Rodadas</h2>
+      <!-- <h2>Rodadas</h2>
       <div class="borda-dashed">
         <div>Adicionar rodada</div>
         <button @click="adiciona_rodada">Adiciona Rodada</button>
-      </div>
+      </div> -->
 
       <div v-for="(rodada, i) in rodadas" class="rodada">
         <h2>Rodada {{i+1}}</h2>
