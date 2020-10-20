@@ -40,4 +40,3 @@ module.exports = async function scraper() {
   });
 };
 
-module.exports().then((q) => console.log(JSON.stringify(q, null, 2)));

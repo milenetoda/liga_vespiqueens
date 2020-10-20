@@ -248,7 +248,6 @@
         async mounted() {
           var response = await fetch("/load");
           var dados = await response.json();
-          console.log(dados);
           this.set_array(dados.participantes, this.participantes);
           this.set_array(dados.duplas, this.duplas);
           this.set_array(dados.rodadas, this.rodadas);
